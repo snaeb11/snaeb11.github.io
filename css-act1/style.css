@@ -10,6 +10,9 @@ p{
 }
 
 .header{
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
     height: 90px;
     display: flex;
     justify-content: center;
@@ -47,7 +50,7 @@ p{
 .header-left{
     display: inline-block;
     width: 25%;
-    background: #ebcf2b;
+    background: #e9b461;
 }
 
 .header-right{
@@ -87,7 +90,7 @@ p{
 .about-button:hover,
 .bikes-button:hover,
 .contact-button:hover{
-    background: #ebcf2b;
+    background: #e9b461;
     cursor: pointer;
 }
 
@@ -102,12 +105,10 @@ p{
 /*Image*/
 .img-body{
     margin: 40px;
-    height: 800px;
-    display: block;
+    height: 50%;
     overflow: hidden;
 }
 .bike-image{
-    display: block;
     width: 100%;
     object-fit: cover;
 }
@@ -211,7 +212,7 @@ p{
     border-radius: 10px;
     border: none;
     padding: 13px;
-    background-color: #ebcf2b;
+    background-color: #e9b461;
     margin-top: 25px;
     width: 170px;
     transition: background-color 0.3s ease, color 0.3s ease;
