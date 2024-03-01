@@ -1,0 +1,302 @@
+/* Header */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    line-height: 1.7;
+}
+
+.header{
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    background: #36342d;
+}
+.page-name{
+    display: inline-block;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 30px;
+    margin-top: 4%;
+    margin-left: 25%;
+    margin-bottom: 0px;
+    line-height: 25px;
+    transition: font-size, margin-top 0.3s ease, color 0.3s ease;
+}
+
+.page-name:hover{
+    margin-top: 7%;
+    font-size: 45px;
+    .lower-text{
+        opacity: 0%;
+    }
+}
+
+.lower-text{
+    display: inline-block;
+    font-weight: lighter;
+    margin-top: 0px;
+    font-size: 15px;
+    transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+
+.header-left{
+    display: inline-block;
+    width: 25%;
+    background: #ebcf2b;
+}
+
+.header-right{
+    width: 75%;
+    margin: 0px;
+    text-align: right;
+}
+
+.homepage-button,
+.client-button,
+.about-button,
+.bikes-button,
+.contact-button{
+    display: inline-block;
+    font-size: 17px;
+    margin-left: 20px;
+    margin-top: 23px;
+    border-radius: 10px;
+    padding: 13px;
+    border: none;
+    background: #36342d;
+    color: #747169;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-button{
+    margin-right: 50px;
+}
+
+.homepage-button:hover,
+.client-button:hover,
+.about-button:hover,
+.bikes-button:hover,
+.contact-button:hover{
+    background: #ebcf2b;
+    cursor: pointer;
+}
+
+.homepage-button:active,
+.client-button:active,
+.about-button:active,
+.bikes-button:active,
+.contact-button:active{
+    background: #ffffff;
+    cursor: pointer;
+}
+
+/*Image*/
+.img-body{
+    margin: 40px;
+    height: 800px;
+    display: block;
+    overflow: hidden;
+}
+.bike-image{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*Welomce*/
+
+.welcome-div{
+    margin: 40px;
+}
+
+.welcome-text{
+    font-size: 50px;
+}
+
+.desc-one{
+    margin-top: 40px;
+    color: grey;
+    font-size: 20px;
+}
+
+.desc-two{
+    color: grey;
+    margin-top: 35px;
+    font-size: 20px;
+}
+
+.more-details{
+    width: 200px;
+    font-size: 13px;
+    margin-top: 2%;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px;
+    border: none;
+    background: #31302d;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.more-details:hover{
+    background-color: #4d4b47;
+    cursor: pointer;
+}
+
+.more-details:active{
+    background-color: #aaa9a8
+}
+
+
+/*NEWS*/
+.news-div{
+    background: #31302d;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.news{
+    display: flex;
+    justify-content: center;
+}
+
+.news-header{
+    padding: 40px;
+    margin-left: 30px;
+    font-size: 25px;
+    color: white;
+}
+
+.news-one{
+    display: inline-block;
+    width: 20%;
+    font-size: 17px;
+    margin-left: 70px;
+}
+
+.news-one .date{
+    color: white;
+}
+
+.news-one .details{
+    text-decoration: underline;
+    margin-top: 25px;
+    color: white;
+}
+
+.news-one .details:hover{
+    cursor: pointer;
+}
+
+.news-one .details-again{
+    margin-top: 25px;
+    color: #8a8883;
+    font-style: italic;
+}
+
+.news-one .read-more{
+    margin-bottom: 45px;
+    font-weight: bolder;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    padding: 13px;
+    background-color: #ebcf2b;
+    margin-top: 25px;
+    width: 170px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.news-one .read-more:hover{
+    background-color: rgb(223, 207, 120);
+    cursor: pointer;
+}
+
+.news-one .read-more:active{
+    background-color: #f7edbf;
+}
+
+/*Footer*/
+
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+.left-footer{
+    margin: 25px;
+    display: inline-block;
+    width: 20%;
+}
+
+.footer .title{
+    font-size: 40px;
+}
+
+.footer .link{
+    font-size: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #31302d;
+}
+
+.footer .link:active{
+    color: rgb(190, 190, 190);
+}
+
+.middle-footer{
+    margin: 25px;
+    width: 50%;
+}
+
+.footer .desc{
+    margin-top: 25px;
+    color: grey;
+    font-size: 15px;
+}
+
+.footer .bik2{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 25px;
+}
+
+.footer .right-footer{
+    margin: 25px;
+    display: inline-block;
+    width: 20%;
+}
+
+.footer .info{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .info-date{
+    color: grey;
+}
+
+.footer .comment:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.footer .info-img{
+    margin-right: 15px;
+    width: 120px;
+    height: 120px;
+}
+
+/*EXTRA*/
