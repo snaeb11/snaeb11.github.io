@@ -54,6 +54,7 @@ p{
     width: 75%;
     margin: 0px;
     text-align: right;
+    border: 10px so;
 }
 
 .homepage-button,
@@ -62,7 +63,7 @@ p{
 .bikes-button,
 .contact-button{
     display: inline-block;
-    font-size: 17px;
+    font-size: 15px;
     margin-left: 20px;
     margin-top: 23px;
     border-radius: 10px;
@@ -75,6 +76,10 @@ p{
 
 .contact-button{
     margin-right: 50px;
+}
+
+.homepage-button{
+    margin-left: 0px;
 }
 
 .homepage-button:hover,
@@ -92,7 +97,6 @@ p{
 .bikes-button:active,
 .contact-button:active{
     background: #ffffff;
-    cursor: pointer;
 }
 
 /*Image*/
