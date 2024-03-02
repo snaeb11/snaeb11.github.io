@@ -65,6 +65,7 @@ p{
 .about-button,
 .bikes-button,
 .contact-button{
+    position: relative;
     display: inline-block;
     font-size: 15px;
     margin-left: 20px;
@@ -75,6 +76,7 @@ p{
     background: #36342d;
     color: #747169;
     transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
 }
 
 .contact-button{
@@ -136,7 +138,9 @@ p{
 }
 
 .more-details{
-    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
     font-size: 13px;
     margin-top: 2%;
     display: inline-block;
@@ -195,9 +199,6 @@ p{
     color: white;
 }
 
-.news-one .details:hover{
-    cursor: pointer;
-}
 
 .news-one .details-again{
     margin-top: 25px;
@@ -206,6 +207,11 @@ p{
 }
 
 .news-one .read-more{
+    text-align: center;
+    display: inline-block;
+    margin-top: 15px;
+    color: black;
+    text-decoration: none;
     margin-bottom: 45px;
     font-weight: bolder;
     font-size: 15px;
@@ -214,7 +220,7 @@ p{
     padding: 13px;
     background-color: #e9b461;
     margin-top: 25px;
-    width: 170px;
+    width: 130px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -305,3 +311,11 @@ p{
 }
 
 /*EXTRA*/
+.not-found{
+    display: flex;
+    justify-content: center;
+}
+
+.back-button{
+    margin-top: 20%;
+}
