@@ -134,9 +134,17 @@ body{
     border: none;
 }
 
+.search-button .search{
+    display: inline-block;
+    vertical-align: middle;
+}
 
+.search-button .search:hover{
+    cursor: pointer;
+}
 .search-button .magnify{
     display: inline-block;
+    vertical-align: middle;
     width: 25px;
     height: 25px;
     margin-top: auto;
