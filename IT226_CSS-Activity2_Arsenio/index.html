@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav-bar">
+        <a class="home-button" href="#">HOME</a>
+        <a class="category-button" href="#">CATEGORY</a>
+        <a class="listing-button" href="#">LISTING</a>
+        <a class="contact-button" href="#">CONTACT US</a>
+        <div class="add-button-div">
+            <a class="plus-button" href="#"> <img src="photos/plus.png" alt="" width="15px" height="15px"> </a>
+            <a class="add-button" href="#">Add Your Listing</a>
+        </div>
+    </div>
+
+    <div class="web-body">
+        
+        <div class="text-banner">
+            <p class="active-listing">OVER 35,000+ ACTIVE LISTINGS</p>
+            <br>
+            <p class="center-text">Find Nearby Places & Things</p>
+        </div>
+
+        <div class="drop-downs" >
+            <select name="area" id="area" class="area">
+                <option value="" disabled selected>All Areas</option>
+                <option value="north">North</option>
+                <option value="south">South</option>
+                <option value="east">East</option>
+                <option value="west">West</option>
+            </select>
+
+            <input type="text" class="location" placeholder="Enter Location">
+
+            <select name="price" id="" class="price">
+                <option value="" disabled selected>Price Range</option>
+                <option value="expensive">$10,000 - $50,000</option>
+                <option value="expensiver">$50,000 - $100,000</option>
+                <option value="expensiveist">$100,000 - $150,000</option>
+                <option value="rech">$150,000 - $500,000</option>
+            </select>
+            <div class="search-button">
+               <a href="" class="search-button"><img src="photos/search.png" alt="" width="15px" height="15px" class="magnify"></a>
+            </div>
+        </div>
+
+        <div class="circles-div">
+            <div class="appartments">
+                <a href="#">
+                    <div class="circle">
+                        <img class="img" src="photos/house.png" alt=""></a>
+                    </div>
+                      <p class="text">Apartment</p>
+                </a>
+            </div>
+    
+            <div class="food" >
+                <a href="#">
+                    <div class="circle">
+                        <img class="img" src="photos/burger.png" alt=""></a>
+                    </div>
+                      <p class="text">Food & Life</p>
+                </a>
+            </div>
+            <div class="cars">
+                <a href="#">
+                    <div class="circle">
+                        <img class="img" src="photos/car.png" alt=""></a>
+                    </div>
+                      <p class="text">Car</p>
+                </a>
+            </div>
+            <div class="shopping">
+                <a href="#">
+                    <div class="circle">
+                        <img class="img" src="photos/shopping.png" alt=""></a>
+                    </div>
+                      <p class="text">Shopping</p>
+                </a>
+            </div>
+            <div class="travelling" >
+                <a href="#">
+                    <div class="circle">
+                        <img class="img" src="photos/globe.png" alt=""></a>
+                    </div>
+                      <p class="text">Travelling</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="popular-cat">
+        <p class="main-text">Popular Categories</p>
+        <p class="sub-text">CHECK THEM OUT</p>
+    </div>
+
+    <div class="categoies-div-container">
+        <div class="cat-inside-div">
+            
+            <div class="div-button-container">
+                <div class="div-button">
+                    <div class="cat-circle">
+                        <a href="#"> <img class="cat-img" src="photos/house.png" alt=""></a>
+                    </div>
+                    <span class="cat-text">Apartments</span>
+                </div>
+                
+                <div class="div-button">
+                    <div class="cat-circle">
+                        <a href="#"> <img class="cat-img" src="photos/burger.png" alt=""></a>
+                    </div>
+                    <span class="cat-text">Food & Life</span>
+                </div>
+                
+                <div class="div-button">
+                    <div class="cat-circle">
+                        <a href="#"> <img class="cat-img" src="photos/car.png" alt=""></a>
+                    </div>
+                    <span class="cat-text">Cars</span>
+                </div>
+                
+                <div class="div-button">
+                    <div class="cat-circle">
+                        <a href="#"> <img class="cat-img" src="photos/shopping.png" alt=""></a>
+                    </div>
+                    <span class="cat-text">Shopping</span>
+                </div>
+                
+                <div class="div-button">
+                    <div class="cat-circle">
+                        <a href="#"> <img class="cat-img" src="photos/globe.png" alt=""></a>
+                    </div>
+                    <span class="cat-text">Travelling</span>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="cont">
+                    <div class="content">
+                        <p class="main-text">One of The Most Trending Stuffs Right Now!</p>
+                        <p class="sub-text">This is a sample content. Just copy and paste this.</p>
+                        <button class="button">
+                            <img class="button-img" src="photos/eye.png" alt="" width="15px">
+                            Discover More
+                        </button>
+                    </div>
+                    <div class="image-container">
+                        <img class="display-img" src="photos/liminalspace.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recent-cut">
+        <p class="main-text">Recent Listing</p>
+        <p class="sub-text">CHECK THEM OUT</p>
+    </div>
+
+    <div class="listing-container">
+        <div class="listing">
+            <img class="listing-image" src="photos/listing1.jpg" alt="">
+            <div class="listing-right">
+                <p class="name">1. Flamigo Apartment</p>
+                <p class="author">by: Sale Agent</p>
+                <div class="price">
+                    <img class="pimage" src="photos/money.png" alt="" width="30" height="30">
+                    <p class="info">$5,450 / month with taxes</p>
+                </div>
+                <p class="detail">Deatils: <span class="measurement">1640 sq. ft</span></p>
+                <div class="bedroom">
+                    <img class="image" src="photos/bed.png" alt="">
+                    <p class="number">8 Bedrooms</p>
+                </div>
+                
+                <div class="bathroom">
+                    <img class="image" src="photos/bath.png" alt="">
+                    <p class="number">5 Bathrooms</p>
+                </div>
+            </div>
+
+            <div class="listing-left">
+                <div class="rating">
+                    <img class="star" src="photos/star.png" alt="">
+                    <img class="star" src="photos/star.png" alt="">
+                    <img class="star" src="photos/star.png" alt="">
+                    <img class="star" src="photos/star.png" alt="">
+                    <img class="star" src="photos/star.png" alt="">
+                    <p class="reviews">&#40;24&#41; Reviews</p>
+                </div>
+
+                <button class="button">
+                    <img class="contact" src="photos/contact.png" alt=""> Contact Now
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="listing-container">
+        <div class="listing">
+            <img class="listing-image" src="photos/listing2.jpeg" alt="">
+            <div class="listing-right">
+                <p class="name">2. Party House</p>
+                <p class="author">by: Top Sales Agent</p>
+                <div class="price">
+                    <img class="pimage" src="photos/money.png" alt="" width="30" height="30">
+                    <p class="info">$1,400 / month with taxes</p>
+                </div>
+                <p class="detail">Deatils: <span class="measurement">3650 sq. ft</span></p>
+                <div class="bedroom">
+                    <img class="image" src="photos/bed.png" alt="">
+                    <p class="number">4 Bedrooms</p>
+                </div>
+                
+                <div class="bathroom">
+                    <img class="image" src="photos/bath.png" alt="">
+                    <p class="number">3 Bathrooms</p>
+                </div>
+            </div>
+
+            <div class="listing-left">
+                <div class="rating">
+                    <img class="star" src="photos/star.png" alt="">
+                    <img class="star" src="photos/star.png" alt="">
+                    <img class="star" src="photos/star.png" alt="">
+                    <img class="star" src="photos/star.png" alt="">
+                    <img class="star" src="photos/star.png" alt="">
+                    <p class="reviews">&#40;14&#41; Reviews</p>
+                </div>
+
+                <button class="button">
+                    <img class="contact" src="photos/contact.png" alt=""> Contact Now
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="listing-container">
+        <div class="listing">
+            <img class="listing-image" src="photos/listing3.jpeg" alt="">
+            <div class="listing-right">
+                <p class="name">2. The Room</p>
+                <p class="author">by: Top Sales Agent</p>
+                <div class="price">
+                    <img class="pimage" src="photos/money.png" alt="" width="30" height="30">
+                    <p class="info">$31,200 / month with taxes</p>
+                </div>
+                <p class="detail">Deatils: <span class="measurement">14,543 sq. ft</span></p>
+                <div class="bedroom">
+                    <img class="image" src="photos/bed.png" alt="">
+                    <p class="number">156 Bedrooms</p>
+                </div>
+                
+                <div class="bathroom">
+                    <img class="image" src="photos/bath.png" alt="">
+                    <p class="number">245 Bathrooms</p>
+                </div>
+            </div>
+
+            <div class="listing-left">
+                <div class="rating">
+                    <img class="star" src="photos/star.png" alt="">
+                    <img class="star" src="photos/star.png" alt="">
+                    <img class="star" src="photos/star.png" alt="">
+                    <img class="star" src="photos/star.png" alt="">
+                    <img class="star" src="photos/star.png" alt="">
+                    <p class="reviews">&#40;543&#41; Reviews</p>
+                </div>
+
+                <button class="button">
+                    <img class="contact" src="photos/contact.png" alt=""> Contact Now
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="dots-container">
+        <img class="dots" src="photos/dots.png" alt="">
+    </div>
+
+    <div class="footer">
+
+    </div>
+</body>
+</html>
