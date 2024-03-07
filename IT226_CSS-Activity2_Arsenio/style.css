@@ -658,18 +658,18 @@ body{
     margin-bottom: 3%;
 }
 
-.copyright-div p{
+.copyright-div .name{
     font-size: 17px;
     color: grey;
     margin: 1%;
 }
 
-.copyright-div a{
+.copyright-div .link{
     color: black;
     text-decoration: none;
 }
 
-.copyright-div a:hover{
+.copyright-div .link:hover{
     text-decoration: underline;
 }
 
