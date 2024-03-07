@@ -649,3 +649,27 @@ body{
     text-decoration: underline;
 }
 
+.copyright-div{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 75%;
+    margin-bottom: 3%;
+}
+
+.copyright-div p{
+    font-size: 17px;
+    color: grey;
+    margin: 1%;
+}
+
+.copyright-div a{
+    color: black;
+    text-decoration: none;
+}
+
+.copyright-div a:hover{
+    text-decoration: underline;
+}
+
