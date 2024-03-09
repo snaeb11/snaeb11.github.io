@@ -101,7 +101,7 @@ html, body{
     display: inline-block;
     width: 50%;
     height: 100%;
-    background-image: url('/photos/bg.jpg');
+    background-image: url('usepbg.png');
     text-align: center;
     vertical-align: middle;
     overflow: hidden;
