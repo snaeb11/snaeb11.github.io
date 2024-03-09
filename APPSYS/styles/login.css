@@ -1,5 +1,7 @@
 html, body{
     height: 100%;
+    background: #121212;
+    
 }
 
 * {
@@ -53,6 +55,7 @@ html, body{
 }
 
 .navbar .navbar-button{
+    color: white;
     font-size: 20px;
     background: none;
     border: none;
@@ -77,7 +80,7 @@ html, body{
     margin-left: 5%;
     border-radius: 5px;
     padding: 5px;
-    background: #D9D9D9;
+    background: #373737;
     display: inline-block;
 }
 
@@ -85,12 +88,12 @@ html, body{
     display: inline-block;
     vertical-align: middle;
     border: none;
-    background: #D9D9D9;
-    color: #ababab;
+    background: #373737;
+    color: #a9a9a9;
 }
 
 .input::placeholder{
-    color: #ababab;
+    color: #a9a9a9;
 }
 
 .search .img{
@@ -103,6 +106,8 @@ html, body{
     width: 50%;
     height: 100%;
     background-image: url('usepbg.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
     text-align: center;
     vertical-align: middle;
     overflow: hidden;
@@ -133,11 +138,13 @@ html, body{
 }
 
 .text-container #main-text{
+    color: white;
     font-size: 64px;
     font-weight: bold;
 }
 
 .text-container #sub-text{
+    color: white;
     font-size: 20px;
     font-weight: 250;
     padding-left: 1%;
@@ -150,6 +157,7 @@ html, body{
 }
 
 .login #text{
+    color: white;
     font-size: 23px;
     font-weight: 500;
 }
@@ -160,8 +168,8 @@ html, body{
     margin-top: 1%;
     margin-bottom: 5%;
     border: none;
-    background: #D9D9D9;
-    color: #ababab;
+    background: #373737;
+    color: #a9a9a9;
     width: 60%;
     height: 50px;
     border-radius: 10px;
@@ -183,10 +191,12 @@ html, body{
 }
 
 .sign-up{
+    color: white;
     width: 55%;
     padding-top: 25%;
     font-size: 25px;
 }
+
 
 .sign-up .button{
     text-decoration: underline;
@@ -197,11 +207,11 @@ html, body{
 }
 
 .sign-up .button:active{
-    color: black;
+    color: white;
 }
 
 .sign-up .button:visited{
-    color: black;
+    color: white;
 }
 
 @media (max-width: 831px) { 
