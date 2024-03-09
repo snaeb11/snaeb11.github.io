@@ -178,6 +178,10 @@ html, body{
     height: 35px;
 }
 
+.login #button:hover{
+    cursor: pointer;
+}
+
 
 .sign-up{
     width: 55%;
