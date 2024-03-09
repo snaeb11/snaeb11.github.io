@@ -388,6 +388,10 @@ html, body{
     height: 35px;
 }
 
+.buttons-container .button:hover{
+    cursor: pointer;
+}
+
 .login #button:hover{
     cursor: pointer;
 }

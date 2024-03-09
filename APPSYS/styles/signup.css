@@ -63,6 +63,7 @@ html, body{
     padding: 10px;
     padding-left: 15px;
     padding-right: 15px;
+    text-decoration: none;
 }
 
 .buttons-div #bidder{
@@ -234,6 +235,10 @@ html, body{
     height: 35px;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.buttons-container .button:hover{
+    cursor: pointer;
 }
 
 .login #button:hover{
