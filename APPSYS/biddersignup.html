@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/bidder.css">
+    <title>BidBit</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo" >
+                <img class="img" src="photos/Logo.svg" alt="bidbit-logo">
+            </div>
+            <div class="buttons-div">
+                <button class="navbar-button" id="home">Home</button>
+                <button class="navbar-button" id="bids">Bids</button>
+                <button class="navbar-button" id="officer">Offices</button>
+                <button class="navbar-button" id="suppliers">Suppliers</button>
+                <button class="navbar-button"><a href="biddersignup.html" id="bidder">Be a Bidder!</a></button>
+                <div class="search">
+                    <img class="img" src="photos/search.svg" alt="search-button">
+                    <input class="input" type="search" placeholder="Search">
+                </div>
+                <button class="navbar-button">
+                    <img id="burger" src="photos/burger.svg" alt="burger-button">
+                </button>
+            </div>
+        </div>
+        <div class="left">
+            <div class="img-div">
+                <img class="img" src="photos/main-img.png" alt="main-img">
+            </div>
+        </div>
+        <div class="right">
+            <div class="text-container">
+                <p class="text" id="main-text">Welcome to BidBit!</p>
+                <p class="text" id="sub-text">Be a part of our community.</p>
+            </div>
+
+            <div class="login">
+                <p id="text">Full Name</p>
+                <div class="name">
+                    <input type="text" name="fname" id="input" placeholder="First Name">
+                    <input type="text" name="lname" id="input" placeholder="Last Name">
+                    <input type="text" name="suffname" id="input-suff" placeholder="Suffix">
+                </div>
+
+                <div class="email">
+                    <label for="email" id="text">Email</label><br>
+                    <input type="email" name="email" id="input" placeholder="email0001@usep.edu.ph"><br>
+                </div>
+                
+                <div class="phone">
+                    <label for="phone" id="text">Phone Number</label><br>
+                    <input type="tel" name="phone" id="input" placeholder="+61 0912345678">
+                </div>
+
+                <div class="address">
+                    <label for="address" id="text">Addresss</label><br>
+                    <input type="text" name="address" id="input" placeholder="">
+                </div>
+
+                <div class="birthdate">
+                    <label for="birth" id="text">Birth Date</label><br>
+                    <input type="date" name="birth" id="birthdate">
+                </div>
+
+                <div class="age">
+                    <label for="age" id="text">Age</label><br>
+                    <input type="number" name="age" id="input">
+                </div>
+
+                <div class="gender">
+                    <label for="gender" id="text">Gender</label><br>
+                    <select name="gender" id="input">
+                        <option disabled selected value="">Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="male">Others</option>
+                    </select>
+                </div>
+
+                <br>
+                <div class="priv-pol">
+                    <p id="title">Privacy Policy</p><hr id="line">
+                    <p id="cont">Please reach out and read our Privacy Policy in order to understand how your information is used and shared, and check below if you accept the policy.</p>
+                    <input type="checkbox" id="checkbox">
+                    <p id="check">I have read, understood, and accepted the privacy policy of BidBit.</p>
+                </div>
+
+                <div class="buttons-container">
+                    <button class="button" id="create-account">Create Account</button>
+                </div>
+
+                <div class="bottom-text">
+                    <p class="sign-up">Already have an account? <a href="index.html" class="login-button">Login Here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
