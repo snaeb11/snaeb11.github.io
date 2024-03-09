@@ -1,6 +1,6 @@
 html, body{
     height: 100%;
-    background: #121212;
+    background: white;
     
 }
 
@@ -23,7 +23,7 @@ html, body{
     height: 100%;
 }
 
-.navbar{
+/*.navbar{
     position: absolute;
     display: block;
     margin: auto;
@@ -55,7 +55,7 @@ html, body{
 }
 
 .navbar .navbar-button{
-    color: white;
+    color: black;
     font-size: 20px;
     background: none;
     border: none;
@@ -68,6 +68,7 @@ html, body{
 
 .navbar .navbar-button:hover{
     text-decoration: underline;
+    text-decoration-color: #9A0000;
     cursor: pointer;
 }
 
@@ -80,7 +81,7 @@ html, body{
     margin-left: 5%;
     border-radius: 5px;
     padding: 5px;
-    background: #373737;
+    background: #D9D9D9;
     display: inline-block;
 }
 
@@ -88,18 +89,18 @@ html, body{
     display: inline-block;
     vertical-align: middle;
     border: none;
-    background: #373737;
-    color: #a9a9a9;
+    background: #D9D9D9;
+    color: #9F9B9B;
 }
 
 .input::placeholder{
-    color: #a9a9a9;
+    color: #9F9B9B;
 }
 
 .search .img{
     width: 20px;
     vertical-align: middle;
-}
+}*/
 
 .container .left{
     display: inline-block;
@@ -138,13 +139,21 @@ html, body{
 }
 
 .text-container #main-text{
-    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    color: black;
     font-size: 64px;
     font-weight: bold;
 }
 
+.text-container .logo-img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 25%;
+}
+
 .text-container #sub-text{
-    color: white;
+    color: black;
     font-size: 20px;
     font-weight: 250;
     padding-left: 1%;
@@ -157,7 +166,7 @@ html, body{
 }
 
 .login #text{
-    color: white;
+    color: black;
     font-size: 23px;
     font-weight: 500;
 }
@@ -168,8 +177,8 @@ html, body{
     margin-top: 1%;
     margin-bottom: 5%;
     border: none;
-    background: #373737;
-    color: #a9a9a9;
+    background: #D9D9D9;
+    color: #9F9B9B;
     width: 60%;
     height: 50px;
     border-radius: 10px;
@@ -191,10 +200,11 @@ html, body{
 }
 
 .sign-up{
-    color: white;
-    width: 55%;
-    padding-top: 25%;
-    font-size: 25px;
+    display: inline-block;
+    color: black;
+    width: 100%;
+    padding-top: 20%;
+    font-size: 22px;
 }
 
 
@@ -207,11 +217,11 @@ html, body{
 }
 
 .sign-up .button:active{
-    color: white;
+    color: #9A0000;
 }
 
 .sign-up .button:visited{
-    color: white;
+    color: #9A0000;
 }
 
 @media (max-width: 831px) { 

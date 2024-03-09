@@ -1,6 +1,6 @@
 html, body{
     height: 100%;
-    background: #121212;
+    background: rgb(255, 255, 255);
 }
 
 * {
@@ -54,7 +54,7 @@ html, body{
 }
 
 .navbar .navbar-button{
-    color: white;
+    color: black;
     font-size: 20px;
     background: none;
     border: none;
@@ -65,8 +65,23 @@ html, body{
     padding-right: 15px;
 }
 
+.buttons-div #bidder{
+    background: #9A0000;
+    color: white;
+    font-style: italic;
+    border: none;
+    border-radius: 10px;
+}
+
 .navbar .navbar-button:hover{
     text-decoration: underline;
+    text-decoration-color: #9A0000;
+    cursor: pointer;
+}
+
+.buttons-div #bidder:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
     cursor: pointer;
 }
 
@@ -79,7 +94,7 @@ html, body{
     margin-left: 5%;
     border-radius: 5px;
     padding: 5px;
-    background: #373737;
+    background: #D9D9D9;
     display: inline-block;
 }
 
@@ -87,12 +102,12 @@ html, body{
     display: inline-block;
     vertical-align: middle;
     border: none;
-    background: #373737;
-    color: #a9a9a9;
+    background: #D9D9D9;
+    color: #9F9B9B;
 }
 
 .input::placeholder{
-    color: #a9a9a9;
+    color: #9F9B9B;
 }
 
 .search .img{
@@ -133,30 +148,31 @@ html, body{
 
 .right .text-container{
     padding-left: 25%;
-    padding-top: 20%;
+    padding-top: 15%;
 }
 
 .text-container #main-text{
     font-size: 64px;
     font-weight: bold;
-    color: white;
+    color: black;
 }
 
 .text-container #sub-text{
-    color: white;
+    color: black;
     font-size: 20px;
     font-weight: 250;
     padding-left: 1%;
 }
 
 .right .login{
+    display: inline-block;
     padding-left: 25%;
     width: 75%;
     padding-top: 10%;
 }
 
 .login #text{
-    color: white;
+    color: black;
     font-size: 23px;
     font-weight: 500;
 }
@@ -167,51 +183,90 @@ html, body{
     margin-top: 1%;
     margin-bottom: 5%;
     border: none;
-    background: #373737;
-    color: #a9a9a9;
+    background: #D9D9D9;
+    color: #9F9B9B;
     width: 60%;
     height: 50px;
     border-radius: 10px;
 }
 
-.login #button{
+.login .radio-container{
+    margin-top: 2%;
+    display: inline-block;
+    text-align: center;
+    width: 60%;
+}
+
+.radio-container .radio-option{
+    display: inline-block;
+    padding: 1%;
+    width: 25%;
+    margin-left: 1%;
+    margin-right: 1%;
+    background: #D9D9D9;
+    border-radius: 5px;
+}
+
+.radio-option #text{
+    font-size: 17px;
+}
+
+.login .buttons-container{
+    display: inline-block;
+    text-align: center;
+    padding: 0%;
+    width: 60%;
+    margin-top: 8%;
+}
+
+.login .button{
+    display: inline-block;
+    vertical-align: middle;
     font-size: 17px;
     color: white;
     font-weight: 350;
     border: none;
     border-radius: 5px;
     background: #9A0000;
-    width: 20%;
+    width: 30%;
     height: 35px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .login #button:hover{
     cursor: pointer;
 }
 
+.login .bottom-text{
+    display: inline-block;
+    text-align: center;
+}
 
-.sign-up{
-    color: white;
-    width: 55%;
-    padding-top: 17%;
+.bottom-text .sign-up{
+    display: inline-block;
+    color: black;
+    width: 100%;
+    padding-top: 10%;
+    padding-left: 10%;
     font-size: 25px;
 }
 
 
-.sign-up .button{
+.sign-up .login-button{
     text-decoration: underline;
 }
 
-.sign-up .button:hover{
+.sign-up .login-button:hover{
     cursor: pointer;
 }
 
-.sign-up .button:active{
-    color: white;
+.sign-up .login-button:active{
+    color: #9A0000;
 }
 
-.sign-up .button:visited{
-    color: white;
+.sign-up .login-button:visited{
+    color: #9A0000;
 }
 
 

@@ -18,10 +18,11 @@
                 <img class="img" src="photos/Logo.svg" alt="bidbit-logo">
             </div>
             <div class="buttons-div">
-                <button class="navbar-button">Home</button>
-                <button class="navbar-button">Bids</button>
-                <button class="navbar-button">Offices</button>
-                <button class="navbar-button">Suppliers</button>
+                <button class="navbar-button" id="home">Home</button>
+                <button class="navbar-button" id="bids">Bids</button>
+                <button class="navbar-button" id="officer">Offices</button>
+                <button class="navbar-button" id="suppliers">Suppliers</button>
+                <button class="navbar-button" id="bidder">Be a Bidder!</button>
                 <div class="search">
                     <img class="img" src="photos/search.svg" alt="search-button">
                     <input class="input" type="search" placeholder="Search">
@@ -43,19 +44,42 @@
             </div>
 
             <div class="login">
-                <label for="name" id="text">Name</label><br>
-                <input type="text" name="name" id="input"><br>
-
                 <label for="email" id="text">Email</label><br>
-                <input type="email" name="email" id="input"><br>
+                <input type="text" name="email" id="input"><br>
 
                 <label for="password" id="text">Password</label><br>
+                <input type="email" name="password" id="input"><br>
+
+                <label for="password" id="text">Re-enter Password</label><br>
                 <input type="password" name="password" id="input">
 
-                <br>
-                <button id="button">Create Account</button>
+                <p id="text">Designation</p>
+                <div class="radio-container">
+                    <div class="radio-option">
+                        <input type="radio" name="designation" value="student">
+                        <label for="designation" id="text">Student</label>
+                    </div>
 
-                <p class="sign-up">Already have an account? <a href="index.html" class="button">Login Here</a></p>
+                    <div class="radio-option">
+                        <input type="radio" name="designation" value="faculty">
+                        <label for="designation" id="text">Faculty</label>
+                    </div>
+
+                    <div class="radio-option">
+                        <input type="radio" name="designation" value="staff">
+                        <label for="designation" id="text">Staff</label>
+                    </div>
+                </div>
+
+                <br>
+                <div class="buttons-container">
+                    <button class="button" id="create-account">Create Account</button>
+                    <button class="button" id="be-bidder">Be a Bidder!</button>
+                </div>
+
+                <div class="bottom-text">
+                    <p class="sign-up">Already have an account? <a href="index.html" class="login-button">Login Here</a></p>
+                </div>
             </div>
         </div>
     </div>
