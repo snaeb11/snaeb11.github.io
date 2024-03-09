@@ -178,9 +178,10 @@ html, body{
     height: 35px;
 }
 
+
 .sign-up{
     width: 55%;
-    padding-top: 25%;
+    padding-top: 18%;
     font-size: 25px;
 }
 
@@ -199,6 +200,7 @@ html, body{
 .sign-up .button:visited{
     color: black;
 }
+
 
 @media (max-width: 831px) { 
     .navbar{
@@ -259,13 +261,13 @@ html, body{
     }
 
     .login #button{
-        font-size: 10px;
-        width: 20%;
+        font-size: 7px;
+        width: 30%;
         height: 20px;
     }
     
     .sign-up{
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .login #input{
