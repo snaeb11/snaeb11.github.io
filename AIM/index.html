@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/login.css">
+
+</head>
+<body>
+    <div class="navbar">
+        <img class="logo" src="photos/logo.png" alt="logo">
+        <div class="link-container">
+            <a href="#" id="link" >About Us</a>
+        <a href="#" id="link" >Our Services</a>
+        <a href="#" id="link" >Our Team</a>
+        <a href="#" id="link" >Contact Us</a>
+        </div>
+
+        <div class="button-container">
+            <a href="#"><button class="button" id="login">Login</button></a>
+            <a href="#"><button class="button" id="book-now" onclick="register()">Register</button></a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="login">
+            <img class="img" src="photos/logoTwo.png" alt="logo">
+            <p id="hi">Hi there!</p>
+            <p id="welcome">Welcome to Pet Care Clinic</p>
+            <form action="" class="form" id="login-form">
+                <input type="text" id="username" class="input" placeholder="Username" required>
+                <br>
+                <input type="password" id="password" class="input" placeholder="Password" required>
+                <a href="#"><p class="link" id="forgor">Forgot Password?</p></a>
+                <input type="submit" class="button" id="login" value="Login">
+                <p class="bottom-text">Don't have an account? <a href="#" onclick="register()"><span class="link" id="signup">Sign up</span></a></p>
+            </form>
+        </div>
+
+        
+
+        <div id="register">
+            
+            <form action="" class="form" id="register-form">
+                <input type="text" id="username" class="input" placeholder="Username" required>
+                <br>
+                <input type="password" id="password" class="input" placeholder="Password" required>
+                <input type="submit" class="button" id="login" value="Register">
+                <p class="bottom-text">Already have an account? <a href="#" onclick="login()"><span class="link" id="signup">Login</span></a></p>
+            </form>
+        </div>
+        <div class="gato"></div>
+    </div>
+
+    <script>
+     function register(){
+            var loginForm = document.getElementById("login-form");
+            var registerForm = document.getElementById("register");
+
+            loginForm.style.opacity = "0";
+            registerForm.style.opacity = "1";
+            loginForm.style.visibility = "hidden";
+            registerForm.style.visibility = "visible";
+        }
+
+        function login(){
+            var loginForm = document.getElementById("login-form");
+            var registerForm = document.getElementById("register");
+
+            registerForm.style.opacity = "0";
+            loginForm.style.opacity = "1";
+            registerForm.style.visibility = "hidden";
+            loginForm.style.visibility = "visible";
+        }
+    </script>
+</body>
+</html>
