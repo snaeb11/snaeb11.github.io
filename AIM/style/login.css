@@ -117,7 +117,7 @@ body{
     height: 96%;
     margin-left: 7%;
     vertical-align: middle;
-    background-image: url(/photos/gato.png);
+    background-image: url('gato.png');
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50px;
