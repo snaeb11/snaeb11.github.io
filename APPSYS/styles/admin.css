@@ -1,0 +1,159 @@
+html, body{
+    width: 100%;
+    background: rgb(255, 255, 255);
+    min-height: 100vh;
+}
+
+body{
+    background-image: url(fullBG.png);
+    background-size: fill;
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+*:focus{
+    outline: none;
+}
+
+.side_navbar {
+    height: 100vh;
+    width: 15%;
+    background-color: rgb(154,0,0, 0.9);
+    display: inline-block;
+    text-align: center;
+}
+
+.side_navbar .line{
+    width: 80%;
+    display: inline-block;
+}
+
+.side_navbar .button-container{
+    margin-top: 20%;
+    display: inline-block;
+    text-align: left;
+}
+
+.side_navbar #button{
+    color: white;
+    display: inline-block;
+    width: 100%;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    margin: 5%;
+
+    margin-bottom: 10%;
+    text-decoration: none;
+}
+
+.side_navbar #button:hover{
+    text-decoration: underline;
+}
+
+.side_navbar #button:active{
+    text-decoration: underline;
+}
+
+.side_navbar #button:visited{
+    text-decoration: underline;
+}
+
+.content{
+    position: fixed;
+    width: 84%;
+    display: inline-block;
+    height: 100%;
+    margin-left: 7px;
+}
+
+.top_navbar{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    border-bottom: 3px solid #9A0000;
+}
+
+.top_navbar .search{
+    margin-left: 5%;
+    border-radius: 5px;
+    padding: 5px;
+    background: #D9D9D9;
+    display: inline-block;
+}
+
+.search{
+    display: inline-block;
+    margin-right: 1%;
+}
+
+.search .input{
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    background: #D9D9D9;
+    color: #9F9B9B;
+}
+
+.search .img{
+    width: 20px;
+    vertical-align: middle;
+}
+
+.admin{
+    display: inline-block;
+    width: 6%;
+    background: #9A0000;
+    margin-right: 3%;
+    border-radius: 5px;
+}
+
+.admin .img{
+    display: inline-block;
+    width: 20px;
+    vertical-align: middle;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5%;
+}
+
+.admin #button{
+    width: 50%;
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5%;
+    color: white;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.admin #button:hover{
+    text-decoration: underline;
+}
+
+.admin #button:active{
+    color: white;
+}
+
+.admin #button:visited{
+    color: white;
+}
+
+.content .dash{
+    margin-top: 3%;
+    height: inherit;
+}
+
+.dash .img{
+    margin: 2%;
+}
