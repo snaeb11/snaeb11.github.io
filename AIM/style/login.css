@@ -148,7 +148,7 @@ body{
 }
 
 .input{
-    background: transparent;
+    background: #27455F;
     border-style: solid;
     border-color: white;
     width: 65%;
@@ -225,8 +225,4 @@ body{
     top: 66%;
     left: 31.5%;
     transform: translate(-50%, -50%);
-}
-
-.form {
-    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
