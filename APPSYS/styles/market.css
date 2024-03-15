@@ -1,0 +1,171 @@
+html, body{
+    height: 100%;
+    background: rgb(255, 255, 255);
+    min-height: 100vh;
+}
+
+body{
+    background-image: url(fullBG.png);
+    background-size: fill;
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+*:focus{
+    outline: none;
+}
+
+.container{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.navbar{
+    position: absolute;
+    display: block;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 99%;
+    height: 10%;
+    text-align: right;
+    z-index: 3;
+}
+
+.navbar .logo{
+    display: inline-block;
+    text-align: left;
+    width: 25%;
+}
+
+.logo .img{
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 5%;
+}
+
+.navbar .buttons-div{
+    width: 74%;
+    height: inherit;
+    display: inline-block;
+    text-align: right;
+}
+
+.navbar .navbar-button{
+    color: black;
+    font-size: 20px;
+    background: none;
+    border: none;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.navbar .navbar-button:hover{
+    text-decoration: underline;
+    text-decoration-color: #9A0000;
+    cursor: pointer;
+}
+
+
+.navbar-button #burger{
+    width: 30px;
+    padding: 0px;
+}
+
+.navbar .search{
+    margin-left: 5%;
+    border-radius: 5px;
+    padding: 5px;
+    background: #D9D9D9;
+    display: inline-block;
+}
+
+.search .input{
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    background: #D9D9D9;
+    color: #9F9B9B;
+}
+
+.input::placeholder{
+    color: #9F9B9B;
+}
+
+.search .img{
+    width: 20px;
+    vertical-align: middle;
+}
+
+.container .content{
+    margin-top: 10%;
+    width: 100%;
+}
+
+.content .title{
+    display: inline-block;
+    font-size: 55px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.content .line{
+    width: 80%;
+    display: inline-block;
+    background: #9A0000;
+    height: 3px;
+    border: none;
+}
+
+.content .item{
+    margin-top: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 20%;
+    display: inline-block;
+    text-align: center;
+}
+
+.item .img_container{
+    display: inline-block;
+    overflow: hidden;
+    width: 90%;
+    height: 450px;
+}
+
+.item #img{
+    width: 300%;
+}
+
+#button{
+    padding: 13px;
+    background: #9A0000;
+    border: none;
+    color: white;
+    font-size: 17px;
+    margin: 3%;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.content #subtext{
+    margin-top: 3%;
+    display: inline-block;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 700;
+}
