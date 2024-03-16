@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Care Clinic</title>
+    <link rel="stylesheet" href="style/booking.css">
+</head>
+<body>
+    <div class="body-container">
+        <div class="navbar">
+            <a href="index.html"><img class="logo" src="photos/logo.png" alt="logo"></a>
+            <div class="link-container">
+                <a href="#" id="link" >About Us</a>
+            <a href="#" id="link" >Our Services</a>
+            <a href="#" id="link" >Our Team</a>
+            <a href="#" id="link" >Contact Us</a>
+            </div>
+            <div class="button-container">
+                <a href="#"><img src="photos/proffIcon.svg" alt="" id="img"></a>
+                <a href="#"><button class="button" id="book-now">Book now</button></a>
+            </div>
+        </div>
+
+        <div class="content">
+            <p class="text" id="meetTitle">Make a Meet</p>
+            <div class="form-container">
+                <form action="#" class="form">
+                    <div id="left">
+                        <label for="parent_name" id="label">Parent Name:</label><br>
+                        <input type="text" class="input" name="parent_name" id="fname" placeholder="First Name" required>
+                        <input type="text" class="input" name="parent_name" id="lname" placeholder="Last Name" required><br>
+
+                        <label for="meet_date" id="label">Meet Date:</label><br>
+                        <input type="date" class="input" name="meet_date" required><br>
+
+                        <label for="phone_number" id="label">Phone Number:</label><br>
+                        <input type="tel" class="input" name="phone_number" required><br>
+
+                        <label for="email" id="label">Email:</label><br>
+                        <input type="email" class="input" name="email" required><br>
+                    </div>
+
+                    <div id="right">
+                        <label for="pet_name" id="label">Pet Name:</label><br>
+                        <input type="text" class="input" name="pet_name" required><br>
+
+                        <label for="pet_type" id="label">Pet Specification:</label><br>
+                        <input type="text" class="input" name="pet_type" id="pet_type" required placeholder="Pet Type (E.g Dog)">
+
+                        <input type="text" class="input" name="per_breed" id="pet_breed" placeholder="Breed (if applicable)"><br>
+
+                        <label for="symptoms" id="label">Symptoms and notes:</label><br>
+                        <textarea name="symptoms" id="textarea" cols="30" rows="5"></textarea>
+                    </div>
+
+                    <div class="priv">
+                        <input type="checkbox" name="priv-pol" id="checkbox"><span id="label">I have read and agreed to the <a href="#"><span id="priv-pol">Privacy Policy</span></a></span>
+                        <input type="submit" value="Book" id="book-button">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+       <!---- <div class="footer">
+            <div id="left">
+                <img src="photos/footer_left.png" alt="logo" class="img">
+                <hr id="line">
+                <p id="text">123 Here ST., That City, PH 12345</p>
+                <p id="text">123-456-789</p>
+                <p id="text">petcare@yourpaw.com</p>
+            </div>
+
+            <div id="middle">
+                <a href="#"><p id="text">About us</p></a>
+                <a href="#"><p id="text">Our Services</p></a>
+                <a href="#"><p id="text">Our Team</p></a>
+                <a href="#"><p id="text">Privacy Policy</p></a>
+            </div>
+
+            <div id="right">
+                <img src="photos/socials.png" alt="" class="img">
+                <p id="text">#WhereEveryPawMatters!</p>
+            </div>
+        </div> -->
+    </div>
+</body>
+</html>
