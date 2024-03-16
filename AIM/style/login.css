@@ -16,6 +16,9 @@ body{
     width: 100%;
     min-height: 100vh;
     height: 100%;
+    background-image: url('bg.jpg');
+    background-color: rgba(21, 46, 68);
+    background-size: cover;
 }
 
 
@@ -100,6 +103,12 @@ body{
     height: 83vh;
     background: #27455F;
     border-radius: 50px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 .content .login{
@@ -148,7 +157,7 @@ body{
 }
 
 .input{
-    background: #27455F;
+    background: transparent;
     border-style: solid;
     border-color: white;
     width: 65%;
@@ -157,6 +166,10 @@ body{
     color: white;
     border-radius: 15px;
     font-size: 15px;
+}
+
+.input::placeholder{
+    color: white;
 }
 
 
@@ -226,3 +239,5 @@ body{
     left: 31.5%;
     transform: translate(-50%, -50%);
 }
+
+
