@@ -11,7 +11,7 @@
 }
 
 html, body{
-    min-height: 100vh;
+    max-height: 100vh;
     width: 100%;
 }
 
@@ -45,30 +45,30 @@ body{
 
 .navbar .link-container{
     display: inline-block;
-    width: 30%;
+    width: 33%;
     text-align: center;
     margin-left: 12%;
 }
 
-.navbar #link{
-    margin-left: 3%;
-    margin-right: 3%;
+.navbar .link{
+    margin-left: 2%;
+    margin-right: 2%;
     display: inline-block;
     color: black;
     text-decoration: none;
     vertical-align: middle;
 }
 
-.navbar #link:hover{
+.navbar .link:hover{
     text-decoration: underline;
     color: black;
 }
 
-.navbar #link:active{
+.navbar .link:active{
     color: black;
 }
 
-.navbar #link:visited{
+.navbar .link:visited{
     color: black;
 }
 
@@ -132,7 +132,7 @@ body{
 .content #meetTitle{
     color: white;
     font-size: 40px;
-    margin: 2%
+    margin: 1%
 }
 
 .form #left{
@@ -185,8 +185,8 @@ textarea{
 }
 
 .form .priv{
-    margin-top: 3%;
-    width: 30%;
+    margin-top: 1%;
+    width: 35%;
     display: inline-block;
 }
 
@@ -209,7 +209,7 @@ textarea{
 }
 
 .priv #book-button{
-    margin-top: 5%;
+    margin-top: 2%;
     width: 25%;
     padding: 8px;
     background: #9AB67B;
@@ -224,7 +224,7 @@ textarea{
     background: #bdda9b;
 }
 
-
+/*vv subject for removal vv*/
 .footer{
     background: #27455F;
     margin-top: 1.5%;
