@@ -31,6 +31,7 @@ html, body{
     display: inline-block;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     background: #ffffff;
+    overflow: hidden;
 }
 
 .navbar .logo{
@@ -113,7 +114,6 @@ html, body{
     display: inline-block;
     min-width: 90%;
     max-width: 90%;
-    height: 85vh;
     margin-top: 1%;
     border-radius: 50px;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
@@ -124,7 +124,7 @@ html, body{
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
-.content .login{
+.content .left{
     width: 50%;
     max-height: 90%;
     display: inline-block;
@@ -133,7 +133,7 @@ html, body{
 
 .gato{
     width: 45%;
-    max-height: 90%;
+    height: 50%;
     display: inline-block;
     margin-top: 1%;
     margin-bottom: 1%;
@@ -141,11 +141,14 @@ html, body{
     border-radius: 50px;
     text-align: center;
     overflow: hidden;
-    object-fit: fill;
+    object-fit: cover;
 }
 
-.gato #gato{
-    width: 110%;
+.gato img{
+    width: 100%;
+    height: 610px;
+    object-fit: cover;
+    float: left;
 }
 
 
@@ -248,20 +251,18 @@ html, body{
 #login-form{
     visibility: visible;
     opacity: 1;
-    max-height: 90%;
 }
 
 #register{
     visibility: hidden;
     opacity: 0;
     margin-top: 2%;
-    width: 40%;
+    width: 50%;
     position: absolute;
     z-index: 2;
     top: 65.5%;
-    left: 29%;
+    left: 27%;
     transform: translate(-50%, -50%);
-    max-height: 50%;
 }
 
 

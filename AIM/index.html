@@ -29,31 +29,36 @@
         </div>
     
         <div class="content">
-            <div class="login">
-                <img class="img" src="photos/logoTwo.png" alt="logo">
-                <p id="hi">Hi there!</p>
-                <p id="welcome">Welcome to Pet Care Clinic</p>
-                <form action="" class="form" id="login-form">
-                    <input type="text" id="username" class="input" placeholder="Username" required>
-                    <br>
-                    <input type="password" id="password" class="input" placeholder="Password" required>
-                    <a href="booking.html"><p class="link" id="forgor">Forgot Password?</p></a>
-                    <input type="submit" class="button" id="login" value="Login">
-                    <p class="bottom-text">Don't have an account? <a href="#" onclick="register()"><span class="link" id="signup">Sign up</span></a></p>
-                </form>
-            </div>
+            <div class="left">
+                <div id="header">
+                    <img class="img" src="photos/logoTwo.png" alt="logo">
+                    <p id="hi">Hi there!</p>
+                    <p id="welcome">Welcome to Pet Care Clinic</p>
+                </div>
+                    <div class="switch">
+                        <div class="login">
+                            <form action="" class="form" id="login-form">
+                                <input type="text" id="username" class="input" placeholder="Username" required>
+                                <br>
+                                <input type="password" id="password" class="input" placeholder="Password" required>
+                                <a href="booking.html"><p class="link" id="forgor">Forgot Password?</p></a>
+                                <input type="submit" class="button" id="login" value="Login">
+                                <p class="bottom-text">Don't have an account? <a href="#" onclick="register()"><span class="link" id="signup">Sign up</span></a></p>
+                            </form>
+                        </div>
+                    </div>
+                    
     
-            
-    
-            <div id="register">
-                
-                <form action="" class="form" id="register-form">
-                    <input type="text" id="username" class="input" placeholder="Username" required>
-                    <br>
-                    <input type="password" id="password" class="input" placeholder="Password" required>
-                    <input type="submit" class="button" id="login" value="Register">
-                    <p class="bottom-text">Already have an account? <a href="#" onclick="login()"><span class="link" id="signup">Login</span></a></p>
-                </form>
+                <div id="register">
+
+                    <form action="" class="form" id="register-form">
+                        <input type="text" id="username" class="input" placeholder="Username" required>
+                        <br>
+                        <input type="password" id="password" class="input" placeholder="Password" required>
+                        <input type="submit" class="button" id="login" value="Register">
+                        <p class="bottom-text">Already have an account? <a href="#" onclick="login()"><span class="link" id="signup">Login</span></a></p>
+                    </form>
+                </div>
             </div>
             <div class="gato">
                 <img src="photos/gato.png" alt="gato" id="gato">

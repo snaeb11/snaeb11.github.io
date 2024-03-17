@@ -31,6 +31,7 @@ html, body{
     display: inline-block;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     background: #ffffff;
+    overflow: hidden;
 }
 
 .navbar .logo{
@@ -119,7 +120,6 @@ html, body{
     display: inline-block;
     width: 90%;
     margin-top: 2.5%;
-    height: 78vh;
     background: #1C7C54;
     border-radius: 50px;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
@@ -187,8 +187,14 @@ textarea{
 
 .form .priv{
     margin-top: 1%;
-    width: 35%;
+    width: 100%;
+    margin-bottom: 1%;
     display: inline-block;
+}
+
+.priv #label{
+    padding-left: 0%;
+    margin-left: 1%;
 }
 
 .priv #priv-pol{
@@ -211,7 +217,7 @@ textarea{
 
 .priv #book-button{
     margin-top: 2%;
-    width: 25%;
+    width: 20%;
     padding: 8px;
     background: #9AB67B;
     border: none;
