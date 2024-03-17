@@ -209,7 +209,7 @@ html, body{
 .login #login{
     margin: 0;
     margin-left: 1%;
-    margin-top: 7%;
+    margin-top: 4%;
     width: 70%;
     background: #1C7C54;
     font-size: 20px;
@@ -229,7 +229,7 @@ html, body{
 #register #login{
     margin: 0;
     margin-left: 1%;
-    margin-top: 12%;
+    margin-top: 5%;
     width: 70%;
     background: #1C7C54;
     font-size: 20px;
