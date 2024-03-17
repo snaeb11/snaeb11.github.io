@@ -11,25 +11,21 @@
 }
 
 html, body{
-    max-height: 100vh;
-    width: 100%;
-}
-
-body{
     display: inline-block;
     text-align: center;
+    width: 100%;
+    height: 100%;
     background-image: url('bg.jpg');
     background-color: rgba(21, 46, 68);
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
 
 .navbar{
     z-index: 5;
-    margin-top: 2%;
-    margin-left: 1%;
-    margin-right: 1%;
-    padding: 10px;
+    max-height: 75px;
+    margin-top: 1%;
     width: 90%;
     border-radius: 50px;
     display: inline-block;
@@ -38,25 +34,28 @@ body{
 }
 
 .navbar .logo{
-    margin-left: 7%;
+    max-width: 100%;
     display: inline-block;
     vertical-align: middle;
+    padding: 5px;
 }
 
 .navbar .link-container{
     display: inline-block;
-    width: 33%;
+    max-width: 35%;
+    min-width: 35%;
+    max-height: 70px;
     text-align: center;
-    margin-left: 12%;
+    vertical-align: middle;
 }
 
 .navbar .link{
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-inline: 3%;
     display: inline-block;
     color: black;
     text-decoration: none;
     vertical-align: middle;
+    font-size: clamp(9px, 3vw, 15px);
 }
 
 .navbar .link:hover{
@@ -75,19 +74,21 @@ body{
 .navbar .button-container{
     display: inline-block;
     text-align: center;
-    width: 25%;
-    margin-left: 17%;
+    width: 20%;
+    vertical-align: middle;
 }
 
 .button {
-    padding: 15px;
-    width: 125px;
+    padding: 8px;
+    width: 100px;
     color: white;
-    font-size: 15px;
+    font-size: 10px;
     border: none;
     border-radius: 50px;
+    margin: 1%;
     margin-left: 2%;
     margin-right: 2%;
+    transition: background 0.3s;
 }
 
 .navbar #img{
