@@ -48,7 +48,7 @@ body{
     margin-left: 12%;
 }
 
-.navbar #link{
+.navbar .link{
     margin-left: 2%;
     margin-right: 2%;
     display: inline-block;
@@ -57,16 +57,16 @@ body{
     vertical-align: middle;
 }
 
-.navbar #link:hover{
+.navbar .link:hover{
     text-decoration: underline;
     color: black;
 }
 
-.navbar #link:active{
+.navbar .link:active{
     color: black;
 }
 
-.navbar #link:visited{
+.navbar .link:visited{
     color: black;
 }
 
