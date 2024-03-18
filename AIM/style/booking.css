@@ -198,21 +198,23 @@ textarea{
 }
 
 .priv #priv-pol{
-    color: white;
+    color: #00D1FF;
     text-decoration: none;
 }
 
 .priv #priv-pol:active{
-    color: white;
+    color: #00D1FF;
+    text-decoration: none;
 }
 
 .priv #priv-pol:hover{
-    color: white;
-    text-decoration: underline;
+    color: #00D1FF;
+    text-decoration: none;
 }
 
 .priv #priv-pol:visited{
-    color: white;
+    color: #00D1FF;
+    text-decoration: none;
 }
 
 .priv #book-button{

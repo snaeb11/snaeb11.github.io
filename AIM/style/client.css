@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Kiwi Maru", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+*:focus{
+    outline: none;
+}
+
+html, body{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    background-image: url('bg.jpg');
+    background-color: rgba(21, 46, 68);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.navbar{
+    z-index: 5;
+    max-height: 75px;
+    margin-top: 1%;
+    width: 90%;
+    border-radius: 50px;
+    display: inline-block;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.navbar .logo{
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+.navbar .link-container{
+    display: inline-block;
+    max-width: 35%;
+    min-width: 35%;
+    max-height: 70px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.navbar .link{
+    margin-inline: 3%;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    vertical-align: middle;
+    font-size: clamp(9px, 3vw, 15px);
+}
+
+.navbar .link:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.navbar .link:active{
+    color: black;
+}
+
+.navbar .link:visited{
+    color: black;
+}
+
+.navbar .button-container{
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    vertical-align: middle;
+}
+
+.button {
+    padding: 8px;
+    width: 100px;
+    color: white;
+    font-size: 10px;
+    border: none;
+    border-radius: 50px;
+    margin: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    transition: background 0.3s;
+}
+
+.navbar #img{
+    vertical-align: middle;
+    display: inline-block;
+    width: 40px;
+    border-radius: 50px;
+    border-style: solid;
+    border: 3px solid black;
+    margin-right: 5%;
+}
+
+#login{
+    background: #9AB67B;
+}
+
+#book-now{
+    background: #1C7C54;
+    transition: background 0.3s;
+}
+
+#book-now:hover{
+    cursor: pointer;
+    background: #33a978;
+}
+
+.body-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper #left{
+    display: inline-block;
+    width: 45%;
+    vertical-align: middle;
+
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    text-align: center;
+    margin: 1%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.wrapper #right{
+    width: 45%;
+    display: inline-block;
+    vertical-align: middle;
+
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    text-align: center;
+    margin: 1%;
+    padding-top: 3.3%;
+    padding-bottom: 3.3%;
+
+}
+
+#left .img{
+    display: inline-block;
+    width: 35%;
+    vertical-align: middle;
+}
+
+.text{
+    color: white;
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+    text-align: left;
+    padding-left: 1%;
+}
+
+.text .main-text{
+    font-size: 40px;
+}
+
+.text #sub-text{
+    font-size: 20px;
+}
+
+.wrapper img{
+    display: inline-block;
+    vertical-align: middle;
+    border-style: solid;
+    border-radius: 50px;
+    max-width: 110px;
+}
+
+#right img{
+    border-style: none;
+}
+
+#right .icon{
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+}
+
+#right #date{
+    font-size: 40px;
+}
+
+#right .text{
+    width: 65%;
+    margin-left: 1%;
+}
+
+/*appointments && pets*/
+
+.app-pet{
+    border-style: dashed;
+    width: 83%;
+    display: inline-block;
+    border-radius: 15px;
+
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    text-align: left;
+    margin: 1%;
+    margin-top: .5%;
+    overflow-y: scroll;
+    height: 54vh;
+}
+
+
+.app-pet #title{
+    padding-left: 2%;
+    color: white;
+    font-size: 45px;
+}
+
+#appointment .date-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: 3%;
+}
+
+#appointment img{
+    width: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.date-container #date{
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+    font-size: 25px;
+}
+
+#appointment .btn-container{
+    display: inline-block;
+    width: 40%;
+    vertical-align: middle;
+}
+
+.button{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 3%; 
+}
+
+#resched{
+    background: #1C7C54;
+}
+
+#cancel{
+    background: #27455F;
+}
+
+#resched:hover{
+    background: #3bb180;
+}
+
+#cancel:hover{
+    background: #4d7ea8;
+}
+
+.container{
+    justify-content: space-around;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: flex;
+    align-items: center;
+}
