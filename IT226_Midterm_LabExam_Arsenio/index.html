@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arsenio - Exam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <script type="text/javascript" src="scripts/script.js"></script>
+</head>
+<body onload="notice()">
+    <section id="top">
+        <div class="header">
+            <div class="left">
+                <div class="left-container">
+                    <div id="mail-cont">
+                        <img src="photos/mail.svg" alt="mail" id="icon">
+                        <a id="link">info@company.com</a>
+                    </div>
+
+                    <div id="phone-cont">
+                        <img src="photos/telephone.svg" alt="phone" id="icon">
+                        <a id="link">010-020-0340</a>
+                    </div>
+                </div>
+            </div>
+            <div class="logo-container">
+                <img src="photos/facebook.svg" alt="facebook" id="logo">
+                <img src="photos/insta.svg" alt="insta" id="logo">
+                <img src="photos/twitter.svg" alt="twitter" id="logo">
+                <img src="photos/linked.svg" alt="linked-in" id="logo">
+            </div>
+        </div>
+    </section>
+
+    <section id="home">
+        <div class="navbar">
+            <div class="text-logo">
+                <p id="text"><span>My</span>Site</p>
+                <div class="link-container">
+                    <a href="" class="link">Home</a>
+                    <a href="" class="link" onclick="error()">About</a>
+                    <a href="" class="link" onclick="error()">Shop</a>
+                    <a href="#last-footer" class="link">Contact</a>
+                </div>
+
+                <form name="form-one" id="form-one">
+                    <div class="search">
+                        <input id="srch-box" type="search" name="srch" onkeypress="handleKeyPress(event)" placeholder="Search">
+                        <a onclick="asd(document.getElementById('srch-box').value)"><img src="photos/search.svg" alt="search"></a>
+                     </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="one">
+            <img src="photos/left.svg" alt="arrow-left" id="left">
+            <div class="text-container">
+                <p id="title">My Site<span id="right"> eCommerce</span></p>
+                <p id="sub-text">My Template</p>
+                <p id="nottom-text">This is my Sample HTML and CSS template.</p>
+            </div>
+
+            <div class="image">
+                <img src="photos/shoe1.jpg" alt="shoes">
+            </div>
+            <img src="photos/right.svg" alt="arrow-right" id="righ">
+            </div>
+    </section>
+
+    <section>
+        <div class="text-section">
+            <div class="title">
+                <p id="catty">
+                    Categories of the Month
+                </p>
+            </div>
+
+            <div class="lorem">
+                <p id="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptate maxime, exercitationem neque est qui esse aut? Exercitationem et consectetur dolorem nobis deserunt numquam doloremque.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="three">
+            <div class="card" id="one">
+                <div class="circle">
+                    <img src="photos/watch.jpg" alt="watch">
+                </div>
+
+                <div class="text-shop">
+                    <p class="text" id="name">Watches</p>
+                    <button class="button" id="shop" onclick="error()">Go Shop</button>
+                </div>
+            </div>
+
+            <div class="card" id="one">
+                <div class="circle">
+                    <img src="photos/shoes.jpg" alt="shoe">
+                </div>
+
+                <div class="text-shop">
+                    <p class="text" id="name">Shoes</p>
+                    <button class="button" id="shop" onclick="error()">Go Shop</button>
+                </div>
+            </div>
+
+            <div class="card" id="one">
+                <div class="circle">
+                    <img src="photos/dog.jpg" alt="dog">
+                </div>
+
+                <div class="text-shop">
+                    <p class="text" id="name">Accessories</p>
+                    <button class="button" id="shop" onclick="error()">Go Shop</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="featured">
+            <div class="header" id="title-text">
+                <p id="big-text">Featured Product</p>
+                <p id="small-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet repudiandae perferendis deserunt autem quaerat accusantium necessitatibus explicabo ullam harum.</p>
+            </div>
+            <div class="card-container-again">
+                <div class="card" id="one">
+                    <div class="circle">
+                        <img src="photos/weyts.jpg" alt="watch">
+                    </div>
+
+                    <div class="star-price">
+                        <div class="stars-container">
+                            <img src="photos/yellowstar.svg" alt="" id="stars">
+                            <img src="photos/yellowstar.svg" alt="" id="stars">
+                            <img src="photos/yellowstar.svg" alt="" id="stars">
+                            <img src="photos/blackstar.svg" alt="" id="stars">
+                            <img src="photos/blackstar.svg" alt="" id="stars">
+                        </div>
+    
+                        <div class="apopo">
+                            <p class="opac" id="price">$240.00</p>
+                        </div>
+                    </div>
+
+                    <div id="prod">
+                        <p id="prod-name">Gym Weight</p>
+                        <p id="prod-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, dolores molestias nisi facilis architecto ad?</p>
+                        <p class="opac" id="prod-rev">Reviews (24)</p>
+                    </div>
+                </div>
+
+                <div class="card" id="one">
+                    <div class="circle">
+                        <img src="photos/sm.jpg" alt="watch">
+                    </div>
+
+                    <div class="star-price">
+                        <div class="stars-container">
+                            <img src="photos/yellowstar.svg" alt="" id="stars">
+                            <img src="photos/yellowstar.svg" alt="" id="stars">
+                            <img src="photos/yellowstar.svg" alt="" id="stars">
+                            <img src="photos/blackstar.svg" alt="" id="stars">
+                            <img src="photos/blackstar.svg" alt="" id="stars">
+                        </div>
+    
+                        <div class="apopo">
+                            <p class="opac" id="price">$480.00</p>
+                        </div>
+                    </div>
+
+                    <div id="prod">
+                        <p id="prod-name">Cloud Sample Shoes</p>
+                        <p id="prod-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, velit.</p>
+                        <p class="opac" id="prod-rev">Reviews (48)</p>
+                    </div>
+                </div>
+
+                <div class="card" id="one">
+                    <div class="circle">
+                        <img src="photos/bayk.jpg" alt="watch">
+                    </div>
+
+                    <div class="star-price">
+                        <div class="stars-container">
+                            <img src="photos/yellowstar.svg" alt="" id="stars">
+                            <img src="photos/yellowstar.svg" alt="" id="stars">
+                            <img src="photos/yellowstar.svg" alt="" id="stars">
+                            <img src="photos/yellowstar.svg" alt="" id="stars">
+                            <img src="photos/yellowstar.svg" alt="" id="stars">
+                        </div>
+    
+                        <div class="apopo">
+                            <p class="opac" id="price">$360.00</p>
+                        </div>
+                    </div>
+
+                    <div id="prod">
+                        <p id="prod-name">Summer Smaple Shoes</p>
+                        <p id="prod-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quisquam amet quibusdam in.</p>
+                        <p class="opac" id="prod-rev">Reviews (74)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="last" id="last-footer">
+            <div class="container">
+                <p id="title">Zay Shop</p>
+                <hr id="line">
+                <div class="info-cont">
+                    <img src="photos/location.svg" alt="">
+                    <p id="info">Apokon, Tagum City, Philippines</p>
+                </div>
+                <div class="info-cont">
+                    <img src="photos/telephone.svg" alt="">
+                    <p id="info">010-020-0340</p>
+                </div>
+                <div class="info-cont">
+                    <img src="photos/mail.svg" alt="">
+                    <p id="info">info@company.com</p>
+                </div>
+            </div>
+            <div class="container">
+                <p id="text-last">Products</p>
+                <hr id="line">
+                <div class="link-container">
+                    <a href="" id="link-last" onclick="error()">Luxury</a>
+                    <a href="" id="link-last" onclick="error()">Sport Wear</a>
+                    <a href="" id="link-last" onclick="error()">Men's Shoes</a>
+                    <a href="" id="link-last" onclick="error()">Women's Shoes</a>
+                    <a href="" id="link-last" onclick="error()">Popular Dress</a>
+                    <a href="" id="link-last" onclick="error()">Gym Accessories</a>
+                    <a href="" id="link-last" onclick="error()">Sport Shoes</a>
+                </div>
+            </div>
+            <div class="container">
+                <p id="text-last">Further Info</p>
+                <hr id="line">
+                <div class="link-container">
+                    <a href="#home" id="link-last">Home</a>
+                    <a href="" id="link-last" onclick="error()">About Us</a>
+                    <a href="" id="link-last" onclick="error()">Shop Location</a>
+                    <a href="" id="link-last" onclick="error()">FAQs</a>
+                    <a href="" id="link-last" onclick="error()">Contact</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="line-div">
+            <hr id="big-line">
+        </div>
+        
+        <div class="very">
+            <div class="logo-container">
+                <a href=""><img src="photos/facebook.svg" alt="facebook" id="logo"></a>
+                <a href=""><img src="photos/insta.svg" alt="insta" id="logo"></a>
+                <a href=""><img src="photos/twitter.svg" alt="twitter" id="logo"></a>
+                <a href=""><img src="photos/linked.svg" alt="linked-in" id="logo"></a>
+            </div>
+            <div class="right-hand">
+                <form action="" name="form" class="form">
+                    <input type="email" placeholder="Email" id="email-box" required>
+                    <input type="submit" id="button" value="Subscribe">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="footer">
+            <div class="left">
+                <a id="link">Copyright 2024 Company Name</a>
+        </div>
+    </section>
+</body>
+</html>

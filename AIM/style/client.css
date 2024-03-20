@@ -1,3 +1,14 @@
+:root {
+    --step--2: clamp(0.7813rem, 0.7052rem + 0.3804cqi, 1rem);
+    --step--1: clamp(0.9375rem, 0.8288rem + 0.5435cqi, 1.25rem);
+    --step-0: clamp(1.125rem, 0.9728rem + 0.7609cqi, 1.5625rem);
+    --step-1: clamp(1.35rem, 1.1402rem + 1.0489cqi, 1.9531rem);
+    --step-2: clamp(1.62rem, 1.3343rem + 1.4285cqi, 2.4414rem);
+    --step-3: clamp(1.944rem, 1.5587rem + 1.9265cqi, 3.0518rem);
+    --step-4: clamp(2.3328rem, 1.8174rem + 2.5772cqi, 3.8147rem);
+    --step-5: clamp(2.7994rem, 2.1145rem + 3.4244cqi, 4.7684rem);
+  }
+
 *{
     margin: 0;
     padding: 0;
@@ -11,13 +22,17 @@
 }
 
 html, body{
-    display: inline-block;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
     background-image: url('bg.jpg');
     background-color: rgba(21, 46, 68);
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    max-width: 100%;
 }
 
 
@@ -27,10 +42,13 @@ html, body{
     margin-top: 1%;
     width: 90%;
     border-radius: 50px;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     background: #ffffff;
     overflow: hidden;
+    border-style: solid;
 }
 
 .navbar .logo{
@@ -41,20 +59,16 @@ html, body{
 }
 
 .navbar .link-container{
-    display: inline-block;
     max-width: 35%;
     min-width: 35%;
-    max-height: 70px;
-    text-align: center;
+    max-height: 70px;   
     vertical-align: middle;
 }
 
 .navbar .link{
     margin-inline: 3%;
-    display: inline-block;
     color: black;
     text-decoration: none;
-    vertical-align: middle;
     font-size: clamp(9px, 3vw, 15px);
 }
 
@@ -72,13 +86,16 @@ html, body{
 }
 
 .navbar .button-container{
-    display: inline-block;
-    text-align: center;
-    width: 20%;
-    vertical-align: middle;
+    display: flex;
+    width: 10%;
+    justify-self: flex-end;
+    border-style: groove;
+    justify-content: center;
+    align-items: center;
 }
 
 .button {
+    justify-self: flex-end;
     padding: 8px;
     width: 100px;
     color: white;
@@ -92,8 +109,7 @@ html, body{
 }
 
 .navbar #img{
-    vertical-align: middle;
-    display: inline-block;
+    justify-self: flex-start;
     width: 40px;
     border-radius: 50px;
     border-style: solid;
@@ -144,13 +160,13 @@ html, body{
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     text-align: center;
     margin: 1%;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: .5%;
+    padding-bottom: .5%;
 }
 
 .wrapper #right{
-    width: 45%;
     display: inline-block;
+    width: 45%;
     vertical-align: middle;
 
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
@@ -161,14 +177,13 @@ html, body{
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     text-align: center;
     margin: 1%;
-    padding-top: 3.3%;
-    padding-bottom: 3.3%;
-
+    padding-top: .5%;
+    padding-bottom: .5%;
 }
 
 #left .img{
     display: inline-block;
-    width: 35%;
+    width: 30%;
     vertical-align: middle;
 }
 
@@ -181,12 +196,12 @@ html, body{
     padding-left: 1%;
 }
 
-.text .main-text{
-    font-size: 40px;
+.wrapper .main-text{
+    font-size: var(--step-1);
 }
 
 .text #sub-text{
-    font-size: 20px;
+    font-size: var(--step--1);
 }
 
 .wrapper img{
@@ -194,7 +209,7 @@ html, body{
     vertical-align: middle;
     border-style: solid;
     border-radius: 50px;
-    max-width: 110px;
+    width: 100%;
 }
 
 #right img{
@@ -203,12 +218,8 @@ html, body{
 
 #right .icon{
     display: inline-block;
-    width: 30%;
+    width: 30.5%;
     vertical-align: middle;
-}
-
-#right #date{
-    font-size: 40px;
 }
 
 #right .text{
@@ -219,9 +230,8 @@ html, body{
 /*appointments && pets*/
 
 .app-pet{
-    border-style: dashed;
-    width: 83%;
-    display: inline-block;
+    width: 90%;
+    margin: 0 auto;
     border-radius: 15px;
 
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
@@ -237,17 +247,29 @@ html, body{
     height: 54vh;
 }
 
+.inner-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+
+#appointment{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 .app-pet #title{
     padding-left: 2%;
     color: white;
-    font-size: 45px;
+    font-size: var(--step-3);
 }
 
 #appointment .date-container{
     display: flex;
-    align-items: center;
-    width: 100%;
+    width: 30%;
     margin-left: 3%;
 }
 
@@ -261,13 +283,14 @@ html, body{
     display: inline-block;
     vertical-align: middle;
     color: white;
-    font-size: 25px;
+    font-size: var(--step-0);
 }
 
 #appointment .btn-container{
-    display: inline-block;
-    width: 40%;
-    vertical-align: middle;
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+    justify-content: space-around;
 }
 
 .button{
@@ -276,7 +299,8 @@ html, body{
     margin: 0%;
     margin-left: 1%;
     margin-right: 1%;
-    padding: 3%; 
+    padding: 10%; 
+    font-size: 14px;
 }
 
 #resched{
