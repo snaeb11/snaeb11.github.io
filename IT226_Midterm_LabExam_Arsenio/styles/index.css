@@ -1,16 +1,17 @@
 
 
 :root {
-    --step--4: clamp(0.0904rem, -0.1453rem + 1.1784vi, 0.768rem);
-    --step--3: clamp(0.1085rem, -0.1877rem + 1.4809vi, 0.96rem);
-    --step--2: clamp(0.1302rem, -0.2419rem + 1.8605vi, 1.2rem);
-    --step--1: clamp(0.1563rem, -0.3111rem + 2.337vi, 1.5rem);
-    --step-0: clamp(0.1875rem, -0.3995rem + 2.9348vi, 1.875rem);
-    --step-1: clamp(0.225rem, -0.512rem + 3.6848vi, 2.3438rem);
-    --step-2: clamp(0.27rem, -0.6551rem + 4.6255vi, 2.9297rem);
-    --step-3: clamp(0.324rem, -0.8371rem + 5.8054vi, 3.6621rem);
-    --step-4: clamp(0.3888rem, -1.0682rem + 7.2849vi, 4.5776rem);
-    --step-5: clamp(0.4666rem, -1.3614rem + 9.14vi, 5.722rem);
+    --step--5: clamp(0.3265rem, 0.2976rem + 0.1445cqi, 0.4096rem);
+    --step--4: clamp(0.3918rem, 0.35rem + 0.209cqi, 0.512rem);
+    --step--3: clamp(0.4702rem, 0.4111rem + 0.2953cqi, 0.64rem);
+    --step--2: clamp(0.5642rem, 0.4822rem + 0.41cqi, 0.8rem);
+    --step--1: clamp(0.6771rem, 0.5648rem + 0.5616cqi, 1rem);
+    --step-0: clamp(0.8125rem, 0.6603rem + 0.7609cqi, 1.25rem);
+    --step-1: clamp(0.975rem, 0.7707rem + 1.0217cqi, 1.5625rem);
+    --step-2: clamp(1.17rem, 0.8976rem + 1.362cqi, 1.9531rem);
+    --step-3: clamp(1.404rem, 1.0432rem + 1.8042cqi, 2.4414rem);
+    --step-4: clamp(1.6848rem, 1.2093rem + 2.3773cqi, 3.0518rem);
+    --step-5: clamp(2.0218rem, 1.3981rem + 3.1182cqi, 3.8147rem);
   }
 
 section{
@@ -65,7 +66,7 @@ html, body{
     align-self: center;
     text-decoration: none;
     color: white;
-    font-size: var(--step--4);
+    font-size: var(--step--3);
 }
 
 .left #link:hover{
@@ -282,7 +283,7 @@ html, body{
 }
 .title #catty{
     display: flex;
-    font-size: var(--step-1);
+    font-size: var(--step-2);
 }
 
 .lorem{
@@ -294,7 +295,7 @@ html, body{
 
 .lorem #text{
     display: flex;
-    font-size: var(--step--4);
+    font-size: var(--step--1);
 }
 
 /********************/
@@ -337,7 +338,7 @@ html, body{
     width: 100%;
     margin: 1%;
     display: inline-block;
-    font-size: var(--step--3);
+    font-size: var(--step--2);
 }
 
 .text-shop .button{
@@ -398,7 +399,7 @@ html, body{
     display: inline-block;
     width: 50%;
     font-weight: 200;
-    font-size: var(--step--4);
+    font-size: var(--step--1);
 }
 
 .card-container-again{
@@ -442,7 +443,7 @@ html, body{
 }
 
 .card #price{
-    font-size: var(--step--4);
+    font-size: var(--step--3);
 }
 
 .card .opac{
@@ -456,13 +457,13 @@ html, body{
 
 #prod #prod-desc{
     margin: 3%;
-    font-size: var(--step--4);
+    font-size: var(--step--2);
     font-weight: 100;
 }
 
 #prod #prod-rev{
     margin: 3%;
-    font-size: var(--step--4);
+    font-size: var(--step--3);
 }
 
 #prod #prod-rev:hover{
@@ -509,7 +510,7 @@ html, body{
 
 .last #info{
     color: white;
-    font-size: var(--step--4);
+    font-size: var(--step--2);
     margin: 5%;
     margin-left: 2%;
 }
@@ -530,7 +531,7 @@ html, body{
     display: block;
     color: white;
     text-decoration: none;
-    font-size: var(--step--4);
+    font-size: var(--step--2);
 }
 
 #link-last:hover{
