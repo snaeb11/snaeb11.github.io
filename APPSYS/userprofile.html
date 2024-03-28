@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/userprofile.css">
+    <title>BidBit</title>
+</head>
+<body>
+    <div class="container">
+        <section>
+            <div class="navbar">
+                <div class="logo" >
+                    <a href="index.html"><img class="img" src="photos/Logo.svg" alt="bidbit-logo"></a>
+                </div>
+                <div class="buttons-div">
+                    <a href="index.html"><button class="navbar-button" id="home">Home</button></a>
+                    <button class="navbar-button" id="bids">Bids</button>
+                    <a href="market.html"><button class="navbar-button" id="markets">Markets</button></a>
+                    <div class="search">
+                        <img class="img" src="photos/search.svg" alt="search-button">
+                        <input class="input" type="search" placeholder="Search">
+                    </div>
+                    <button class="navbar-button">
+                        <img id="burger" src="photos/user.svg" alt="burger-button">
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="profile-container">
+
+                <div class="topline">
+                    <p class="text" id="main-text">Profile</p>
+                    <hr id="line">
+                </div>
+
+                <div class="img-container">
+                    <img src="photos/aboy.jpg" alt="user-photo">
+                </div>
+
+                <div class="details-container">
+                    <p class="text" id="bold">Name: <span class="text" id="detail">John D. Doe</span> </p>
+                    <p class="text" id="bold">Phone No.: <span class="text" id="detail">+63123456789</span> </p>
+                    <p class="text" id="bold">Email: <span class="text" id="detail">jdoe0001@usep.edu.ph</span></p>
+                    <p class="text" id="bold">Designation: <span class="text" id="detail">Faculty, Staff</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="bottom">
+            <div class="orders-container">
+                <div class="topline">
+                    <p class="text" id="main-text">Orders</p>
+                    <hr id="line">
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="photos/chicken.jpg" alt="user-photo">
+                        </div>
+
+                        <div class="title-container">
+                            <p class="text" id="product-name">Chicken</p>
+                            <p class="text" id="product-type">Poultry</p>
+
+                            <div class="details-container">
+                                <p class="text" id="bold">Quantity: <span class="text" id="detail">1</span></p>
+                                <p class="text" id="bold">Price: <span class="text" id="detail">Php 150.00</span></p>
+                                <p class="text" id="bold">Payment: <span class="text" id="detail">Not paid</span></p>
+                                <p class="text" id="bold">Claim: <span class="text" id="detail">Pending</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="photos/vermicast.jpg" alt="user-photo">
+                        </div>
+
+                        <div class="title-container">
+                            <p class="text" id="product-name">Vermicast</p>
+                            <p class="text" id="product-type">Fertilizer</p>
+
+                            <div class="details-container">
+                                <p class="text" id="bold">Quantity: <span class="text" id="detail">1 Sack</span></p>
+                                <p class="text" id="bold">Price: <span class="text" id="detail">Php 100.00</span></p>
+                                <p class="text" id="bold">Payment: <span class="text" id="detail">Not paid</span></p>
+                                <p class="text" id="bold">Claim: <span class="text" id="detail">Pending</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="photos/egg.jpg" alt="user-photo">
+                        </div>
+
+                        <div class="title-container">
+                            <p class="text" id="product-name">Eggs</p>
+                            <p class="text" id="product-type">Poultry</p>
+
+                            <div class="details-container">
+                                <p class="text" id="bold">Quantity: <span class="text" id="detail">1 Tray</span></p>
+                                <p class="text" id="bold">Price: <span class="text" id="detail">Php 150.00</span></p>
+                                <p class="text" id="bold">Payment: <span class="text" id="detail">Not paid</span></p>
+                                <p class="text" id="bold">Claim: <span class="text" id="detail">Pending</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="photos/coconut.jpg" alt="user-photo">
+                        </div>
+
+                        <div class="title-container">
+                            <p class="text" id="product-name">Coconut</p>
+                            <p class="text" id="product-type">Fresh Harvest</p>
+
+                            <div class="details-container">
+                                <p class="text" id="bold">Quantity: <span class="text" id="detail">15 kg</span></p>
+                                <p class="text" id="bold">Price: <span class="text" id="detail">Php 150.00</span></p>
+                                <p class="text" id="bold">Payment: <span class="text" id="detail">Not paid</span></p>
+                                <p class="text" id="bold">Claim: <span class="text" id="detail">Pending</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bids">
+                <div class="topline">
+                    <p class="text" id="main-text">Bids</p>
+                    <hr id="line">
+                </div>
+
+                <div class="bids-container">
+                    <div class="bid-card">
+                        <p class="text" id="card">Eggs: <span id="price">Php200</span> 09/03/2024 - 8:00 AM</p>
+                    </div>
+
+                    <div class="bid-card">
+                        <p class="text" id="card">Coconut: <span id="price">Php500</span> 10/03/2024 - 10:00 AM</p>
+                    </div>
+
+                    <div class="bid-card">
+                        <p class="text" id="card">Vermicast: <span id="price">Php1500</span> 11/03/2024 - 1:00 PM</p>
+                    </div>
+
+                    <div class="bid-card">
+                        <p class="text" id="card">Corn: <span id="price">Php100</span> 12/03/2024 - 8:00 AM</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

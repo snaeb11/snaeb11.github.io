@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/signup.css">
     <title>BidBit</title>
+    <script src="scripts/signup.js" ></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,25 +14,6 @@
 </head>
 <body>
     <div class="container">
-        <!--<div class="navbar">
-            <div class="logo" >
-                <img class="img" src="photos/Logo.svg" alt="bidbit-logo">
-            </div>
-            <div class="buttons-div">
-                <button class="navbar-button" id="home">Home</button>
-                <button class="navbar-button" id="bids">Bids</button>
-                <button class="navbar-button" id="officer">Offices</button>
-                <button class="navbar-button" id="suppliers">Suppliers</button>
-                <button class="navbar-button"><a href="biddersignup.html" id="bidder">Be a Bidder!</a></button>
-                <div class="search">
-                    <img class="img" src="photos/search.svg" alt="search-button">
-                    <input class="input" type="search" placeholder="Search">
-                </div>
-                <button class="navbar-button">
-                    <img id="burger" src="photos/burger.svg" alt="burger-button">
-                </button>
-            </div>
-        </div>-->
         <div class="left">
             <div class="img-div">
                 <img class="img" src="photos/main-img.png" alt="main-img">
@@ -44,36 +26,43 @@
             </div>
 
             <div class="login">
-                <label for="email" id="text">Email</label><br>
-                <input type="text" name="email" id="input"><br>
-
-                <label for="password" id="text">Password</label><br>
-                <input type="password" name="password" id="input"><br>
-
-                <label for="password" id="text">Re-enter Password</label><br>
-                <input type="password" name="password" id="input">
-
-                <p id="text">Designation</p>
-                <div class="radio-container">
-                    <div class="radio-option">
-                        <input type="radio" name="designation" value="student">
-                        <label for="designation" id="text">Student</label>
+                <form action="" name="suform" onsubmit="passwordCheck()">
+                    <label for="email" id="text">Email</label><br>
+                    <input type="email" name="email" id="input" required><br>
+    
+                    <label for="password" id="text">Password</label><br>
+                    <input type="password" name="password" id="input" required><br>
+    
+                    <label for="password" id="text">Re-enter Password</label><br>
+                    <input type="password" name="repassword" id="input" required>
+    
+                    <p id="text">Designation</p>
+                    <div class="radio-container">
+                        <div class="radio-option">
+                            <label for="designation" id="text">
+                                <input type="radio" name="designation" value="student" required> Student
+                            </label>
+                        </div>
+    
+                        <div class="radio-option">
+                            
+                            <label for="designation" id="text">
+                                <input type="radio" name="designation" value="faculty"> Faculty
+                            </label>
+                        </div>
+    
+                        <div class="radio-option">
+                            <label for="designation" id="text">
+                                <input type="radio" name="designation" value="staff"> Staff
+                            </label>
+                        </div>
                     </div>
+    
+                    <br>
+                </form>
 
-                    <div class="radio-option">
-                        <input type="radio" name="designation" value="faculty">
-                        <label for="designation" id="text">Faculty</label>
-                    </div>
-
-                    <div class="radio-option">
-                        <input type="radio" name="designation" value="staff">
-                        <label for="designation" id="text">Staff</label>
-                    </div>
-                </div>
-
-                <br>
                 <div class="buttons-container">
-                    <button class="button" id="create-account">Create Account</button>
+                    <input type="submit" name="submit" class="button" value="Create Account">
                     <a href="biddersignup.html"><button class="button" id="bebidder">Be a Bidder!</button></a>
                 </div>
 

@@ -1,0 +1,395 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.Landing{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #FFFFFF;
+}
+
+.Pictures{
+	position: absolute;
+	width: 1505px;
+	height: 729px;
+}
+
+.bgimg{
+	position: absolute;
+	width: 1528px;
+	height: 742px;
+	mix-blend-mode: darken;
+	opacity: 0.09;
+}
+
+.bar{
+	position: absolute;
+	width: 1450px;
+	height: 56px;
+	left: 70px;
+	top: 20px;
+}
+
+.bidbit img{
+	position: absolute;
+	width: 95px;
+	height: 55px;
+	left: 15px;
+}
+
+.navselect {
+    color: #000000;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 820px;
+}
+
+.navselect ul {
+    list-style-type: none;
+    font-family: 'Roboto Condensed';
+    font-size: 16px;
+    font-weight: 400;
+	line-height: 19px;
+    font-style: normal;
+}
+
+.navselect ul li {
+    display: inline-block;
+    margin-left: 20px;
+
+}
+
+.navselect ul li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: #9A0000;
+}
+
+
+.navsearch {
+    position: absolute;
+    width: 130px;
+    height: 30px;
+    left: 1060px;
+    top: 15px;
+    border-radius: 3px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    background-color: #D9D9D9;
+    color: #9F9B9B;
+    border: none;
+}
+
+.searchbutton {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 1120px;
+    top: 15px;
+    border-radius: 100%;
+    border: none;
+    background: none;
+}
+
+.searchbutton img {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 10px;
+    right: 30px;
+}
+
+.navsearch:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+
+.navbidder{
+	position: absolute;
+	width: 110px;
+	height: 30px;
+	left: 1220px;
+	top: 15px;
+	background: #9A0000;
+	font-family: 'Roboto Condensed';
+	font-style: italic;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+	text-decoration-line: underline;
+	color: #FFFFFF;
+	border: none;
+}
+
+.navbidder:hover{
+	font-style: normal;
+}
+
+
+.navmenu{
+		position: absolute;
+	width: 20px;
+	height: 30px;
+	left: 1350px;
+	top: 17px;
+	border: none;
+}
+
+
+.maintxt{
+	position: absolute;
+	width: 832px;
+	height: 289px;
+	left: 50px;
+	top: 150px;
+}
+
+
+.mainheadings{
+	position: absolute;
+	width: 794px;
+	height: 75px;
+	left: 88px;
+	font-family: 'Roboto Condensed';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 45px;
+	line-height: 75px;
+	letter-spacing: 2px;
+	color: #000000;
+}
+
+.subheadings{
+	position: absolute;
+	width: 500px;
+	height: 119px;
+	left: 93px;
+	top: 75px;
+    font-family: 'Roboto Condensed'; 
+    font-weight: lighter; 
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+
+}
+
+.mainimg{
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	left: 950px;
+	top: 75px;
+}
+
+
+.bidnow{
+	position: absolute;
+	width: 140px;
+	height: 40px;
+	left: 89px;
+	top: 210px;
+	background: #9A0000;
+	font-family: 'Roboto Condensed';
+	font-style: normal;
+	font-weight: 510px;
+	font-size: 15px;
+	line-height: 28px;
+	color: #FFFFFF;
+	border: none;
+}
+
+.bidnow:hover{
+	text-decoration: underline;
+	font-style: italic;
+}
+
+.line1{
+	position: absolute;
+	width: 250px;
+	height: 0px;
+	left: -90px;
+	top: 120px;
+	border: 3px solid #9A0000;
+	transform: rotate(90deg);
+}
+
+.socials{
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 30px;
+	top: 270px;
+	display: inline-block;
+	transition: scale 0.35s ease;
+}
+
+.socials img{
+	margin-bottom: 10px;
+}
+
+.socials img:hover{
+	cursor: pointer;
+	scale: 1.3;
+}
+
+.bidding{
+	background-color: blue;
+	height: 100px;
+	width: 1505px;
+
+}
+
+.urgent{
+	position: absolute;
+	width: 944px;
+	height: 38px;
+	left: 140px;
+	top: 520px;
+	font-family: 'Roboto Condensed';
+	font-style: italic;
+	font-weight: 300px;
+	font-size: 25px;
+	line-height: 38px;
+	color: #000000;
+}
+
+.line2{
+	position: absolute;
+	width: 1010px;
+	height: 0px;
+	left: 320px;
+	top: 545px;
+	border: 3px solid #9A0000;
+}
+
+.biddercontainer{
+	position: absolute;
+	width: 372px;
+	height: 193px;
+	left: 140px;
+	top: 540px;
+}
+
+.box1{
+	position: absolute;
+	width: 370px;
+	height: 155px;
+	top: 30px;
+	background: #D9D9D9;
+	border-radius: 5px;
+	
+}
+
+.box1 img{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+.box2{
+	position: absolute;
+	width: 360px;
+	height: 155px;
+	left: 420px;
+	top: 30px;
+	background: #D9D9D9;
+	border-radius: 5px;
+	
+}
+
+.box2 img{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+.box3{
+	position: absolute;
+	width: 370px;
+	height: 155px;
+	left: 825px;
+	top: 30px;
+	background: #D9D9D9;
+	border-radius: 5px;
+	
+}
+
+.box3 img{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+
+.offname{
+	position: absolute;
+	width: 220px;
+	height: 50px;
+	left: 130px;
+	top: 10px;
+	font-family: 'Roboto Condensed';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 23px;
+	color: #000000;
+}
+
+
+.bidspec{
+	position: absolute;
+	width: 100px;
+	height: 14px;
+	left: 130px;
+	top: 30px;
+	font-family: 'Roboto Condensed';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 13px;
+	line-height: 14px;
+	color: #000000;
+}
+
+.biddesc{
+	position: absolute;
+	width: 199px;
+	height: 48px;
+	left: 130px;
+	top: 60px;
+	font-family: 'Roboto Condensed';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 13px;
+	line-height: 12px;
+	color: #000000;
+}
+
+.officebid{
+	position: absolute;
+	width: 81px;
+	height: 25px;
+	left: 130px;
+	top: 110px;
+	background-color: #9A0000;
+	font-family: 'Roboto Condensed';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	color: #FFFFFF;
+	border: none;
+}
+
+
+.officebid:hover{
+	text-decoration: underline;
+	font-style: italic;
+}

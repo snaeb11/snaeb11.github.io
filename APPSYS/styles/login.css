@@ -1,7 +1,7 @@
 html, body{
     height: 100%;
     background: white;
-    
+    width: 100%;
 }
 
 * {
@@ -134,8 +134,8 @@ html, body{
 }
 
 .right .text-container{
-    padding-left: 25%;
-    padding-top: 20%;
+    padding-left: 20%;
+    padding-top: 15%;
 }
 
 .text-container #main-text{
@@ -171,7 +171,7 @@ html, body{
     font-weight: 500;
 }
 
-.login #input{
+.login .input{
     padding-left: 3%;
     font-size: 20px;
     margin-top: 1%;
@@ -183,6 +183,7 @@ html, body{
     height: 50px;
     border-radius: 10px;
 }
+
 
 .login #button{
     font-size: 17px;
@@ -205,6 +206,7 @@ html, body{
     width: 100%;
     padding-top: 20%;
     font-size: 22px;
+    text-align: center;
 }
 
 

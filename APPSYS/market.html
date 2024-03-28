@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BidBit</title>
     <link rel="stylesheet" href="styles/market.css">
+    <script src="scripts/sweet.js"></script>
+    <script src="scripts/market.js"></script>
 </head>
 <body>
     <div class="container">
@@ -12,7 +14,8 @@
             <div class="logo" >
                <a href="index.html"><img class="img" src="photos/Logo.svg" alt="bidbit-logo"></a>
             </div>
-            <div class="buttons-div">
+
+            <div class="buttons">
                 <a href="index.html"><button class="navbar-button" id="home">Home</button></a>
                 <button class="navbar-button" id="bids">Bids</button>
                 <button class="navbar-button" id="markets">Markets</button>
@@ -21,7 +24,7 @@
                     <input class="input" type="search" placeholder="Search">
                 </div>
                 <button class="navbar-button">
-                    <img id="burger" src="photos/burger.svg" alt="burger-button">
+                    <img id="burger" src="photos/user.svg" alt="burger-button">
                 </button>
             </div>
         </div>
@@ -32,29 +35,61 @@
             <div class="item">
                 <div class="img_container">
                     <img id="img" src="photos/placeholder.jpg" alt="">
+                    <div class="details">
+                        <div id="deet-cont">
+                            <p id="prod-name">Bananas</p>
+                            <p class="left">Variety: <span id="red">Cardava</span></p>
+                            <p class="left">Availabe Stock: <span id="red">20 Hands</span></p>
+                            <p class="left">Price: <span id="red">Php 20</span></p>
+                        </div>
+                    </div>
                 </div>
-                <button id="button">Place Order</button>
+                <button id="button" onclick="confirm()">Place Order</button>
             </div>
 
             <div class="item">
                 <div class="img_container">
-                    <img id="img" src="photos/placeholder.jpg" alt="">
+                    <img id="img" src="photos/egg.jpg" alt="">
+                    <div class="details">
+                        <div id="deet-cont">
+                            <p id="prod-name">Eggs</p>
+                            <p class="left">Variety: <span id="red">The Browns</span></p>
+                            <p class="left">Availabe Stock: <span id="red">5 Trays</span></p>
+                            <p class="left">Price: <span id="red">Php 120</span></p>
+                        </div>
+                    </div>
                 </div>
-                <button id="button">Place Order</button>
+                <button id="button" onclick="confirm()">Place Order</button>
             </div>
 
             <div class="item">
                 <div class="img_container">
-                    <img id="img" src="photos/placeholder.jpg" alt="">
+                    <img id="img" src="photos/verm.jpg" alt="">
+                    <div class="details">
+                        <div id="deet-cont">
+                            <p id="prod-name">Vermicast</p>
+                            <p class="left">Variety: <span id="red">Fertilizer</span></p>
+                            <p class="left">Availabe Stock: <span id="red">3 Sacks</span></p>
+                            <p class="left">Price: <span id="red">Php 250</span></p>
+                        </div>
+                    </div>
                 </div>
-                <button id="button">Place Order</button>
+                <button id="button" onclick="confirm()">Place Order</button>
             </div>
 
             <div class="item">
                 <div class="img_container">
-                    <img id="img" src="photos/placeholder.jpg" alt="">
+                    <img id="img" src="photos/coconut.jpg" alt="">
+                    <div class="details">
+                        <div id="deet-cont">
+                            <p id="prod-name">Coconut</p>
+                            <p class="left">Variety: <span id="red">Butong</span></p>
+                            <p class="left">Availabe Stock: <span id="red">6 Pieces</span></p>
+                            <p class="left">Price: <span id="red">Php 250</span></p>
+                        </div>
+                    </div>
                 </div>
-                <button id="button">Place Order</button>
+                <button id="button" onclick="confirm()">Place Order</button>
             </div>
 
             <br>

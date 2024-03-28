@@ -11,73 +11,15 @@
 }
 
 html, body{
-    display: inline-block;
+    display: flex;
     text-align: center;
-    width: 100%;
-    height: 100%;
     background-image: url('bg.jpg');
     background-color: rgba(21, 46, 68);
     background-repeat: no-repeat;
     background-size: cover;
+    flex-wrap: wrap;
 }
 
-
-.navbar{
-    z-index: 5;
-    max-height: 75px;
-    margin-top: 1%;
-    width: 90%;
-    border-radius: 50px;
-    display: inline-block;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-    background: #ffffff;
-    overflow: hidden;
-}
-
-.navbar .logo{
-    max-width: 100%;
-    display: inline-block;
-    vertical-align: middle;
-    padding: 5px;
-}
-
-.navbar .link-container{
-    display: inline-block;
-    max-width: 35%;
-    min-width: 35%;
-    max-height: 70px;
-    text-align: center;
-    vertical-align: middle;
-}
-
-.navbar .link{
-    margin-inline: 3%;
-    display: inline-block;
-    color: black;
-    text-decoration: none;
-    vertical-align: middle;
-    font-size: clamp(9px, 3vw, 15px);
-}
-
-.navbar .link:hover{
-    text-decoration: underline;
-    color: black;
-}
-
-.navbar .link:active{
-    color: black;
-}
-
-.navbar .link:visited{
-    color: black;
-}
-
-.navbar .button-container{
-    display: inline-block;
-    text-align: center;
-    width: 20%;
-    vertical-align: middle;
-}
 
 .button {
     padding: 8px;
@@ -92,65 +34,60 @@ html, body{
     transition: background 0.3s;
 }
 
-#login{
-    background: #9AB67B;
-}
-
-#register-btn{
-    background: #1C7C54;
-}
-
-#login:hover{
-    background: #bdd79e;
-    cursor: pointer;
-}
-
-#register-btn:hover{
-    background: #2e9f70;
-    cursor: pointer;
-}
-
 .content {
-    display: inline-block;
-    min-width: 90%;
-    max-width: 90%;
-    margin-top: 1%;
-    border-radius: 50px;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
-    border:1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
 }
+
+.content #logo-div{
+    z-index: 5;
+    background-color: #27455F;
+    display: flex;
+    width: 50%;
+}
+
 
 .content .left{
+    display:flex;
     width: 50%;
-    max-height: 90%;
-    display: inline-block;
-    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
 }
 
-.gato{
-    width: 45%;
-    height: 50%;
-    display: inline-block;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    vertical-align: middle;
-    border-radius: 50px;
-    text-align: center;
-    overflow: hidden;
-    object-fit: cover;
+
+#login-window{
+    z-index: 2;
+    width: 60%;
+    background-color: white;
+    border-radius: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transform: translateX(50%);
+    transition: all 1s ease;
 }
 
-.gato img{
-    width: 100%;
-    height: 610px;
-    object-fit: cover;
-    float: left;
+.moveleft {
+    transform: translateX(-760px) !important;
+    opacity: 0;
 }
 
+.move-right{
+    transform: translateX(-200px) !important;
+    opacity: 1 !important;
+}
+
+.returnLogin{
+    transform: translateX(200px) !important;
+    opacity: 1 !important;
+}
+
+.returnReg{
+    transform: translateX(-950px) !important;
+    opacity: 0 !important;
+}
 
 .img{
     display: inline-block;
@@ -158,33 +95,45 @@ html, body{
     max-width: 100%;
 }
 
-#hi{
+#hi, #reg{
+    padding-top: 3rem;
     font-size: 35px;
-    color: white;
+    color: rgb(0, 0, 0);
     margin: 2%;
     margin-top: 1%;
+    width: 100%;
 }
 
 #welcome{
-    color: white;
+    justify-self: center;
+    color: rgb(0, 0, 0);
     font-size: 17px;
     margin: 3%;
 }
 
+.login #login-form{
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .input{
+    display: flex;
     background: transparent;
     border-style: solid;
-    border-color: white;
-    width: 65%;
-    padding: 20px;
-    margin: 3%;
-    color: white;
+    border-color: rgb(181, 181, 181);
+    width: 80%;
+    padding: 15px;
+    margin-top: 1%;
+    color: rgb(0, 0, 0);
     border-radius: 15px;
     font-size: 15px;
 }
 
 .input::placeholder{
-    color: white;
+    color: rgb(181, 181, 181);
 }
 
 
@@ -194,7 +143,9 @@ html, body{
 }
 
 #forgor{
-    margin-left: 50%;
+    width: 100%;
+    margin-top: 12%;
+    margin-left: 60%;
 }
 
 .link:hover{
@@ -210,10 +161,10 @@ html, body{
 }
 
 .login #login{
+    border-radius: 10px;
     margin: 0;
-    margin-left: 1%;
     margin-top: 4%;
-    width: 70%;
+    width: 95%;
     background: #1C7C54;
     font-size: 20px;
     transition: background 0.35s;
@@ -225,45 +176,49 @@ html, body{
 }
 
 
-#register #password{
-    margin-top: 4%;
+.bottom-text{
+    color: rgb(0, 0, 0);
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
-#register #login{
+/*register*/
+#register-window{
+    width: 60%;
+    background-color: white;
+    border-radius: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transform: translateX(-50%);
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+.register #register{
+    border-radius: 10px;
     margin: 0;
-    margin-left: 1%;
-    margin-top: 5%;
-    width: 70%;
+    margin-top: 4%;
+    width: 95%;
     background: #1C7C54;
     font-size: 20px;
+    transition: background 0.35s;
 }
 
-#register #login:hover{
-    background: #258d62;
+.register #register:hover{
+    background: #2a845e;
+    cursor: pointer;
 }
 
-.bottom-text{
-    color: white;
-    margin-top: 1%;
-    margin-left: 6%;
+.register #forgor{
+    margin-left: 40%;
 }
 
-#login-form{
-    visibility: visible;
-    opacity: 1;
+.register .input{
+    margin: 0%;
 }
 
-#register{
-    visibility: hidden;
-    opacity: 0;
-    margin-top: 2%;
-    width: 50%;
-    position: absolute;
-    z-index: 2;
-    top: 65.5%;
-    left: 27%;
-    transform: translate(-50%, -50%);
-}
+
 
 
 

@@ -1,0 +1,2313 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.Landing{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #FFFFFF;
+}
+
+.Pictures{
+	position: absolute;
+	width: 1505px;
+	height: 729px;
+}
+
+.bgimg{
+	position: absolute;
+	width: 1528px;
+	height: 742px;
+	mix-blend-mode: darken;
+	opacity: 0.09;
+}
+
+.bar{
+	position: absolute;
+	width: 1450px;
+	height: 56px;
+	left: 70px;
+	top: 20px;
+}
+
+.bidbit img{
+	position: absolute;
+	width: 95px;
+	height: 55px;
+	left: 15px;
+}
+
+.navselect {
+    color: #000000;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 820px;
+}
+
+.navselect ul {
+    list-style-type: none;
+    font-family: 'Roboto Condensed';
+    font-size: 16px;
+    font-weight: 400;
+	line-height: 19px;
+    font-style: normal;
+}
+
+.navselect ul li {
+    display: inline-block;
+    margin-left: 20px;
+
+}
+
+.navselect ul li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: #9A0000;
+}
+
+
+.navsearch {
+    position: absolute;
+    width: 130px;
+    height: 30px;
+    left: 1060px;
+    top: 15px;
+    border-radius: 3px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    background-color: #D9D9D9;
+    color: #9F9B9B;
+    border: none;
+}
+
+.searchbutton {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 1120px;
+    top: 15px;
+    border-radius: 100%;
+    border: none;
+    background: none;
+}
+
+.searchbutton img {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 10px;
+    right: 30px;
+}
+
+.navsearch:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+
+.navbidder{
+	position: absolute;
+	width: 110px;
+	height: 30px;
+	left: 1220px;
+	top: 15px;
+	background: #9A0000;
+	font-family: 'Roboto Condensed';
+	font-style: italic;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+	text-decoration-line: underline;
+	color: #FFFFFF;
+	border: none;
+}
+
+.navbidder:hover{
+	font-style: normal;
+}
+
+
+.navmenu{
+		position: absolute;
+	width: 20px;
+	height: 30px;
+	left: 1350px;
+	top: 17px;
+	border: none;
+}
+
+.maintxt-container {
+    position: absolute;
+    top: 80px;
+    width: 1480px;
+    height: 120px;
+    left: 40px;
+}
+
+.todaybid {
+    position: absolute;
+    width: 600px;
+    height: 47px;
+    left: 123px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 600px;
+    font-size: 25px;
+    line-height: 47px;
+    color: #000000;
+}
+
+.line1 {
+    position: absolute;
+    width: 58px;
+    height: 0px;
+    left: 317px;
+    top: 70px;;
+    border: 1px solid #000000;
+    transform: rotate(90deg);
+}
+
+.line2 {
+    position: absolute;
+    width: 58px;
+    left: 527px;
+    top: 70px;;
+    border: 1px solid #000000;
+    transform: rotate(90deg);
+}
+
+.line3 {
+    position: absolute;
+    width: 58px;
+    height: 0px;
+    left: 737px;
+    top: 70px;;
+    border: 1px solid #000000;
+    transform: rotate(90deg);
+}
+
+.line4 {
+    position: absolute;
+    width: 58px;
+    height: 0px;
+    left: 948px;
+    top: 70px;;
+    border: 1px solid #000000;
+    transform: rotate(90deg);
+}
+
+.line5 {
+    position: absolute;
+    width: 58px;
+    height: 0px;
+    left: 1159px;
+    top: 70px;;
+    border: 1px solid #000000;
+    transform: rotate(90deg);
+}
+
+.line6 {
+    position: absolute;
+    width: 1210px;
+    height: 0px;
+    left: 123px;
+    top: 105px;
+    border: 3px solid #9A0000;
+}
+
+.time1 {
+    position: absolute;
+    width: 150px;
+    height: 28px;
+    left: 123px;
+    top: 40px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.time2 {
+    position: absolute;
+    width: 150px;
+    height: 28px;
+    left: 360px;
+    top: 55px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.time3 {
+    position: absolute;
+    width: 150px;
+    height: 28px;
+    left: 575px;
+    top: 55px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.time4 {
+    position: absolute;
+    width: 150px;
+    height: 28px;
+    left: 784px;
+    top: 55px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.time5 {
+    position: absolute;
+    width: 150px;
+    height: 28px;
+    left: 1000px;
+    top: 55px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.time6 {
+    position: absolute;
+    width: 150px;
+    height: 28px;
+    left: 1210px;
+    top: 55px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.bidnow {
+    position: absolute;
+    width: 150px;
+    height: 23px;
+    left: 123px;
+    top: 63px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+
+    color: #9A0000;
+}
+
+.product1 {
+    position: absolute;
+    width: 49px;
+    height: 15px;
+    left: 123px;
+    top: 80px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 300px;
+    font-size: 13px;
+    line-height: 15px;
+    color: #000000;
+}
+
+.product2 {
+    position: absolute;
+    width: 51px;
+    height: 15px;
+    left: 360px;
+    top: 80px;;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 300px;
+    font-size: 13px;
+    line-height: 15px;
+    color: #000000;
+}
+
+.product3 {
+    position: absolute;
+    width: 25px;
+    height: 15px;
+    left: 575px;
+    top: 80px;;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 300px;
+    font-size: 13px;
+    line-height: 15px;
+    color: #000000;
+}
+
+.product4 {
+    position: absolute;
+    width: 46px;
+    height: 15px;
+    left: 784px;
+    top: 80px;;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+    color: #000000;
+}
+
+.product5 {
+    position: absolute;
+    width: 38px;
+    height: 15px;
+    left: 1000px;
+    top: 80px;;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+    color: #000000;
+}
+
+.product6 {
+    position: absolute;
+    width: 29px;
+    height: 15px;
+    left: 1210px;
+    top: 80px;;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+    color: #000000;
+}
+
+.bidding-container {
+    position: absolute;
+    height: 270px;
+    top: 240px;
+    display: flex;
+    margin: 0 124px;
+}
+
+.specibid{
+    width: 365px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+
+}
+
+.currentbid{
+    width: 365px;
+    height: 290px;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+    border-radius: 5px;
+}
+
+.bidhistory{
+    width: 365px;
+    height: 290px;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+    border-radius: 5px;
+}
+
+.biddetails{
+	font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.bidprofile{
+	display: flex;
+	width: 365px;
+	height: 70px;
+}
+
+.proddetails{
+	display: inline-block;
+}
+
+.bidprod{
+	margin-left: 10px;
+	font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 15px;
+    color: #000000;
+    margin-top: 20px;
+}
+
+.prodqty{
+	margin-left: 10px;
+	font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 15px;
+    color: #000000;
+    margin-top: 10px;
+}
+
+.placingbid{
+	margin-top: 80px;
+	display: inline-block;
+	font-family: 'Roboto Condensed';
+}
+
+.bidamount{
+	background-color: #D9D9D9;
+	border: none;
+}
+
+.placebidbutton {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    top: 250px;
+    background: #9A0000;
+    font-family: 'Roboto Condensed';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    border: none;
+}
+
+.placebidbutton:hover {
+    font-style: normal;
+}
+
+.currentbid {
+    width: 365px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.currbidinfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.bidinfo-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.bidinfo-row label {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    width: 120px;
+}
+
+.bidinfo-row input {
+    width: 170px;
+    margin-left: 10px;
+    border: none;
+    border-bottom: 2px solid;
+    background-color:  #D9D9D9;
+}
+
+.finalbid label{
+	font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    width: 120px;
+}
+
+.finalbid input{
+	width: 170px;
+    margin-left: 10px;
+    border: none;
+    border-bottom: 2px solid;
+    background-color:  #D9D9D9;
+}
+
+
+
+.bidder1,
+.bidder2,
+.bidder3 {
+    margin-bottom: 10px;
+    display: flex;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    margin-right: 10px;
+    margin-left: 60px;
+}
+
+.amount,
+.date,
+.time {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    display: inline;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+.amount{
+	color: #9A0000;
+}
+
+.upcomingbids-container{
+	position: absolute;
+    width: 1230px;
+    top: 600px;
+    left: 30px;
+    margin: 0 124px;
+   
+}
+
+.upcomingbids{
+	position: absolute;
+	font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 22px;
+    color: #000000;
+    font-style: italic;
+}
+
+.line7 {
+    position: absolute;
+    width: 1020px;
+    height: 0px;
+    left: 198px;
+    top: 17px;
+    border: 3px solid #9A0000;
+}
+
+.line8 {
+    position: absolute;
+    width: 58px;
+    height: 0px;
+    left: 210px;
+    top: 70px;;
+    border: 1px solid #000000;
+    transform: rotate(90deg);
+}
+
+.line9 {
+    position: absolute;
+    width: 58px;
+    left: 421px;
+    top: 70px;;
+    border: 1px solid #000000;
+    transform: rotate(90deg);
+}
+
+.line10 {
+    position: absolute;
+    width: 58px;
+    height: 0px;
+    left: 632px;
+    top: 70px;;
+    border: 1px solid #000000;
+    transform: rotate(90deg);
+}
+
+.line11 {
+    position: absolute;
+    width: 58px;
+    height: 0px;
+    left: 843px;
+    top: 70px;;
+    border: 1px solid #000000;
+    transform: rotate(90deg);
+}
+
+.line12 {
+    position: absolute;
+    width: 58px;
+    height: 0px;
+    left: 1053px;
+    top: 70px;;
+    border: 1px solid #000000;
+    transform: rotate(90deg);
+}
+
+.date1 {
+    position: absolute;
+    width: 190px;
+    height: 28px;
+    top: 40px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.date2 {
+    position: absolute;
+    width: 190px;
+    height: 28px;
+    left: 255px;
+    top: 40px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.date3 {
+    position: absolute;
+    width: 190px;
+    height: 28px;
+    left: 470px;
+    top: 40px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.date4 {
+    position: absolute;
+    width: 190px;
+    height: 28px;
+    left: 680px;
+    top: 40px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.date5 {
+    position: absolute;
+    width: 190px;
+    height: 28px;
+    left: 885px;
+    top: 40px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.date6 {
+    position: absolute;
+    width: 190px;
+    height: 28px;
+    left: 1100px;
+    top: 40px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.settime1 {
+    position: absolute;
+    width: 69px;
+    height: 15px;
+    top: 80px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 300px;
+    font-size: 13px;
+    line-height: 15px;
+    color: #9A0000;
+}
+
+.settime2 {
+    position: absolute;
+    width: 69px;
+    height: 15px;
+    left: 255px;
+    top: 80px;;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 300px;
+    font-size: 13px;
+    line-height: 15px;
+    color: #9A0000;
+}
+
+.settime3 {
+    position: absolute;
+    width: 69px;
+    height: 15px;
+    left: 470px;
+    top: 80px;;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 300px;
+    font-size: 13px;
+    line-height: 15px;
+    color: #9A0000;
+}
+
+.settime4 {
+    position: absolute;
+    width: 69px;
+    height: 15px;
+    left: 680px;
+    top: 80px;;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+    color: #9A0000;
+}
+
+.settime5 {
+    position: absolute;
+    width: 69px;
+    height: 15px;
+    left: 885px;
+    top: 80px;;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+    color: #9A0000;
+}
+
+.settime6 {
+    position: absolute;
+    width: 69px;
+    height: 15px;
+    left: 1100px;
+    top: 80px;;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+    color: #9A0000;
+}
+
+/* Bids Today */
+
+position: absolute;
+width: 1206px;
+height: 132px;
+left: 123px;
+top: 149px;
+
+
+
+/* Group 1 */
+
+position: absolute;
+width: 1135px;
+height: 64px;
+left: 123px;
+top: 209px;
+
+
+
+
+
+
+/* Bids */
+
+position: relative;
+width: 1440px;
+height: 1024px;
+
+background: #FFFFFF;
+
+
+/* Pictures */
+
+position: absolute;
+width: 3013px;
+height: 1391px;
+left: -908px;
+top: -293px;
+
+
+
+/* USeP 1 */
+
+position: absolute;
+width: 3013px;
+height: 1391px;
+left: -908px;
+top: -293px;
+
+background: url(USeP.jpg);
+mix-blend-mode: darken;
+opacity: 0.09;
+
+
+/* NavBar */
+
+position: absolute;
+width: 1331px;
+height: 56px;
+left: 50px;
+top: 34px;
+
+
+
+/* Home */
+
+position: absolute;
+width: 38px;
+height: 19px;
+left: 874px;
+top: 48px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Bids */
+
+position: absolute;
+width: 28px;
+height: 19px;
+left: 933px;
+top: 48px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Market */
+
+position: absolute;
+width: 44px;
+height: 19px;
+left: 981px;
+top: 48px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Rectangle 21 */
+
+position: absolute;
+width: 86px;
+height: 22px;
+left: 1235px;
+top: 46px;
+
+background: #9A0000;
+
+
+/* Be a Bidder! */
+
+position: absolute;
+width: 56px;
+height: 14px;
+left: 1251px;
+top: 51px;
+
+font-family: 'Roboto Condensed';
+font-style: italic;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+text-decoration-line: underline;
+
+color: #FFFFFF;
+
+
+
+/* Search Bar */
+
+position: absolute;
+width: 147px;
+height: 25px;
+left: 1059px;
+top: 45px;
+
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 147px;
+height: 25px;
+left: 1059px;
+top: 45px;
+
+background: #D9D9D9;
+border-radius: 3px;
+
+
+/* Search */
+
+position: absolute;
+width: 33px;
+height: 14px;
+left: 1116px;
+top: 50px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+color: #9F9B9B;
+
+
+
+/* Search */
+
+position: absolute;
+width: 13px;
+height: 13px;
+left: 1183px;
+top: 50px;
+
+background: url(loupe.png);
+
+
+/* Line 1 */
+
+position: absolute;
+width: 39px;
+height: 0px;
+left: 927px;
+top: 66px;
+
+border: 1.5px solid #9A0000;
+
+
+/* Logo */
+
+position: absolute;
+width: 102.38px;
+height: 56px;
+left: 50px;
+top: 34px;
+
+
+
+/* Bid */
+
+position: absolute;
+width: 57px;
+height: 56px;
+left: 50px;
+top: 34px;
+
+font-family: 'Roboto Condensed';
+font-style: italic;
+font-weight: 700;
+font-size: 48px;
+line-height: 56px;
+letter-spacing: -0.05em;
+
+color: #000000;
+
+
+
+/* bit */
+
+position: absolute;
+width: 40px;
+height: 56px;
+left: 103px;
+top: 34px;
+
+font-family: 'Roboto Condensed';
+font-style: italic;
+font-weight: 400;
+font-size: 48px;
+line-height: 56px;
+letter-spacing: -0.09em;
+
+color: #9A0000;
+
+
+
+/* hammer 2 */
+
+position: absolute;
+width: 13px;
+height: 13px;
+left: 143.11px;
+top: 45px;
+
+background: url(hammer.png);
+transform: rotate(44.5deg);
+
+
+/* Menu */
+
+position: absolute;
+width: 28px;
+height: 18px;
+left: 1353px;
+top: 48px;
+
+
+
+/* Rectangle 2 */
+
+position: absolute;
+width: 28px;
+height: 4px;
+left: 1353px;
+top: 48px;
+
+background: #242424;
+border-radius: 5px;
+
+
+/* Rectangle 3 */
+
+position: absolute;
+width: 28px;
+height: 4px;
+left: 1353px;
+top: 55px;
+
+background: #242424;
+border-radius: 5px;
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 28px;
+height: 4px;
+left: 1353px;
+top: 62px;
+
+background: #242424;
+border-radius: 5px;
+
+
+/* Upcoming Bids */
+
+position: absolute;
+width: 1209px;
+height: 120px;
+left: 114px;
+top: 847px;
+
+
+
+/* Group 2 */
+
+position: absolute;
+width: 1200px;
+height: 58px;
+left: 123px;
+top: 909px;
+
+
+
+/* Tags */
+
+position: absolute;
+width: 149px;
+height: 41px;
+left: 123px;
+top: 917px;
+
+
+
+/* 11:00 A.M */
+
+position: absolute;
+width: 51px;
+height: 15px;
+left: 123px;
+top: 943px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 300;
+font-size: 13px;
+line-height: 15px;
+
+color: #9A0000;
+
+
+
+/* March 10, 2024 */
+
+position: absolute;
+width: 149px;
+height: 28px;
+left: 123px;
+top: 917px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+
+color: #000000;
+
+
+
+/* Tags */
+
+position: absolute;
+width: 149px;
+height: 41px;
+left: 336px;
+top: 917px;
+
+
+
+/* 12:00 P.M */
+
+position: absolute;
+width: 49px;
+height: 15px;
+left: 336px;
+top: 943px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 300;
+font-size: 13px;
+line-height: 15px;
+
+color: #9A0000;
+
+
+
+/* March 11, 2024 */
+
+position: absolute;
+width: 149px;
+height: 28px;
+left: 336px;
+top: 917px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+
+color: #000000;
+
+
+
+/* Tags */
+
+position: absolute;
+width: 149px;
+height: 41px;
+left: 542px;
+top: 917px;
+
+
+
+/* 8:00 A.M */
+
+position: absolute;
+width: 45px;
+height: 15px;
+left: 542px;
+top: 943px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 300;
+font-size: 13px;
+line-height: 15px;
+
+color: #9A0000;
+
+
+
+/* March 12, 2024 */
+
+position: absolute;
+width: 149px;
+height: 28px;
+left: 542px;
+top: 917px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+
+color: #000000;
+
+
+
+/* Tags */
+
+position: absolute;
+width: 149px;
+height: 41px;
+left: 752px;
+top: 917px;
+
+
+
+
+
+
+
+/* March 13, 2024 */
+
+position: absolute;
+width: 149px;
+height: 28px;
+left: 752px;
+top: 917px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+
+color: #000000;
+
+
+
+/* Tags */
+
+position: absolute;
+width: 149px;
+height: 41px;
+left: 963px;
+top: 918px;
+
+
+
+/* 2:00 P.M */
+
+position: absolute;
+width: 43px;
+height: 15px;
+left: 963px;
+top: 944px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 300;
+font-size: 13px;
+line-height: 15px;
+
+color: #9A0000;
+
+
+
+/* March 14, 2024 */
+
+position: absolute;
+width: 149px;
+height: 28px;
+left: 963px;
+top: 918px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+
+color: #000000;
+
+
+
+/* Tags */
+
+position: absolute;
+width: 149px;
+height: 41px;
+left: 1174px;
+top: 917px;
+
+
+
+/* 3:00 P.M */
+
+position: absolute;
+width: 43px;
+height: 15px;
+left: 1174px;
+top: 943px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 300;
+font-size: 13px;
+line-height: 15px;
+
+color: #9A0000;
+
+
+
+/* March 13, 2024 */
+
+position: absolute;
+width: 149px;
+height: 28px;
+left: 1174px;
+top: 917px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+
+color: #000000;
+
+
+
+
+
+
+/* Upcoming Bids */
+
+position: absolute;
+width: 209px;
+height: 42px;
+left: 114px;
+top: 847px;
+
+font-family: 'Roboto Condensed';
+font-style: italic;
+font-weight: 500;
+font-size: 36px;
+line-height: 42px;
+
+color: #000000;
+
+
+
+/* Line 3 */
+
+position: absolute;
+width: 976px;
+height: 0px;
+left: 341px;
+top: 880px;
+
+border: 3px solid #9A0000;
+
+
+
+
+
+/* Tags */
+
+position: absolute;
+width: 99px;
+height: 41px;
+left: 334px;
+top: 220px;
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tags */
+
+position: absolute;
+width: 94px;
+height: 41px;
+left: 544px;
+top: 221px;
+
+
+
+
+
+
+
+
+
+
+/* Tags */
+
+position: absolute;
+width: 82px;
+height: 41px;
+left: 754px;
+top: 220px;
+
+
+
+
+
+
+
+
+
+
+
+/* Tags */
+
+position: absolute;
+width: 82px;
+height: 41px;
+left: 965px;
+top: 220px;
+
+
+
+
+
+
+
+
+
+
+/* Tags */
+
+position: absolute;
+width: 82px;
+height: 41px;
+left: 1176px;
+top: 220px;
+
+
+
+/* 5:00 P.M */
+
+position: absolute;
+width: 82px;
+height: 28px;
+left: 1176px;
+top: 220px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+
+color: #000000;
+
+
+
+/* Line 5 */
+
+position: absolute;
+width: 58px;
+height: 0px;
+left: 317px;
+top: 212px;
+
+border: 1px solid #000000;
+transform: rotate(90deg);
+
+
+/* Line 6 */
+
+position: absolute;
+width: 58px;
+height: 0px;
+left: 527px;
+top: 212px;
+
+border: 1px solid #000000;
+transform: rotate(90deg);
+
+
+/* Line 7 */
+
+position: absolute;
+width: 58px;
+height: 0px;
+left: 737px;
+top: 212px;
+
+border: 1px solid #000000;
+transform: rotate(90deg);
+
+
+/* Line 8 */
+
+position: absolute;
+width: 58px;
+height: 0px;
+left: 948px;
+top: 212px;
+
+border: 1px solid #000000;
+transform: rotate(90deg);
+
+
+/* Line 9 */
+
+position: absolute;
+width: 58px;
+height: 0px;
+left: 1159px;
+top: 212px;
+
+border: 1px solid #000000;
+transform: rotate(90deg);
+
+
+
+
+
+
+
+
+/* Bidding History */
+
+position: absolute;
+width: 417px;
+height: 435px;
+left: 912px;
+top: 353px;
+
+
+
+/* Rectangle 17 */
+
+position: absolute;
+width: 417px;
+height: 435px;
+left: 912px;
+top: 353px;
+
+background: #D9D9D9;
+
+
+/* Bidder 1 : $5000 | 09/03/2024 - 0800h */
+
+position: absolute;
+width: 288px;
+height: 24px;
+left: 976px;
+top: 431px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 18px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Bidder 2 : $5500 | 09/03/2024 - 0830h */
+
+position: absolute;
+width: 288px;
+height: 24px;
+left: 976px;
+top: 475px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 18px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Bidder 3 : $6000 | 09/03/2024 - 0900h */
+
+position: absolute;
+width: 288px;
+height: 24px;
+left: 976px;
+top: 518px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 18px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Bidder 1 : $6500 | 09/03/2024 - 0930h */
+
+position: absolute;
+width: 288px;
+height: 23px;
+left: 976px;
+top: 554px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 18px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Bidder 3 : $7000 | 09/03/2024 - 1000h */
+
+position: absolute;
+width: 288px;
+height: 24px;
+left: 976px;
+top: 597px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 18px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Bidder 2 : $7500 | 09/03/2024 - 1030h */
+
+position: absolute;
+width: 288px;
+height: 23px;
+left: 977px;
+top: 641px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 18px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Bidder 3 : $8000 | 09/03/2024 - 1100h */
+
+position: absolute;
+width: 288px;
+height: 24px;
+left: 977px;
+top: 684px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 18px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Bidder 1 : $8500 | 09/03/2024 - 1130h */
+
+position: absolute;
+width: 288px;
+height: 24px;
+left: 976px;
+top: 727px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 18px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Bidding History */
+
+position: absolute;
+width: 162px;
+height: 30px;
+left: 1041px;
+top: 371px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Current Bidding */
+
+position: absolute;
+width: 437px;
+height: 435px;
+left: 451px;
+top: 353px;
+
+
+
+/* Rectangle 18 */
+
+position: absolute;
+width: 437px;
+height: 435px;
+left: 451px;
+top: 353px;
+
+background: #D9D9D9;
+
+
+/* : */
+
+position: absolute;
+width: 6.04px;
+height: 27.49px;
+left: 615.18px;
+top: 435.46px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+
+color: #000000;
+
+
+
+/* : */
+
+position: absolute;
+width: 6.04px;
+height: 27.49px;
+left: 615.18px;
+top: 480.87px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+
+color: #000000;
+
+
+
+/* : */
+
+position: absolute;
+width: 6.04px;
+height: 27.49px;
+left: 615.18px;
+top: 521.5px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+
+color: #000000;
+
+
+
+/* Opening Bid */
+
+position: absolute;
+width: 115.89px;
+height: 27.49px;
+left: 472.73px;
+top: 435.46px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+
+color: #000000;
+
+
+
+/* Last Bid */
+
+position: absolute;
+width: 78.47px;
+height: 27.49px;
+left: 472.73px;
+top: 480.87px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+
+color: #000000;
+
+
+
+/* Ending Bid */
+
+position: absolute;
+width: 101.4px;
+height: 27.49px;
+left: 472.73px;
+top: 521.5px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+
+color: #000000;
+
+
+
+/* Current Bid */
+
+position: absolute;
+width: 109.85px;
+height: 27.49px;
+left: 473px;
+top: 664px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 23px;
+
+color: #000000;
+
+
+
+/* : */
+
+position: absolute;
+width: 6.04px;
+height: 27.49px;
+left: 616.65px;
+top: 664px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+
+color: #000000;
+
+
+
+/* Line 13 */
+
+position: absolute;
+width: 243.85px;
+height: 0px;
+left: 627.52px;
+top: 685.51px;
+
+border: 1px solid #000000;
+
+
+/* Line 10 */
+
+position: absolute;
+width: 243.85px;
+height: 0px;
+left: 626.04px;
+top: 462.95px;
+
+border: 1px solid #000000;
+
+
+/* Line 11 */
+
+position: absolute;
+width: 243.85px;
+height: 0px;
+left: 626.04px;
+top: 503.58px;
+
+border: 1px solid #000000;
+
+
+/* Line 12 */
+
+position: absolute;
+width: 243.85px;
+height: 0px;
+left: 626.04px;
+top: 543.01px;
+
+border: 1px solid #000000;
+
+
+/* Current Bidding */
+
+position: absolute;
+width: 152.1px;
+height: 27.49px;
+left: 594.65px;
+top: 370.93px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 23px;
+
+color: #000000;
+
+
+
+
+
+
+
+/* OSAS */
+
+position: absolute;
+width: 75px;
+height: 75px;
+left: 110px;
+top: 428px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 53.75%;
+right: 0.14%;
+top: 53.75%;
+bottom: 0.14%;
+
+background: #775732;
+
+
+/* Vector */
+
+position: absolute;
+left: 0.14%;
+right: 53.75%;
+top: 53.75%;
+bottom: 0.14%;
+
+background: #775732;
+
+
+/* Vector */
+
+position: absolute;
+left: 53.75%;
+right: 0.14%;
+top: 0.14%;
+bottom: 53.75%;
+
+background: #775732;
+
+
+/* Vector */
+
+position: absolute;
+left: 0.14%;
+right: 53.75%;
+top: 0.14%;
+bottom: 53.75%;
+
+background: #775732;
+
+
+/* Vector */
+
+position: absolute;
+left: 33.96%;
+right: 33.96%;
+top: 33.96%;
+bottom: 33.96%;
+
+background: #CA9352;
+
+
+/* Vermicast Manure */
+
+position: absolute;
+width: 174px;
+height: 28px;
+left: 200px;
+top: 437px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+
+color: #000000;
+
+
+
+/* Fertilizer | Quantity: 10 sacks */
+
+position: absolute;
+width: 168px;
+height: 18px;
+left: 202px;
+top: 462px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 18px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Description: */
+
+position: absolute;
+width: 77px;
+height: 19px;
+left: 200px;
+top: 498px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Place Bid */
+
+position: absolute;
+width: 247px;
+height: 99.66px;
+left: 118px;
+top: 686px;
+
+
+
+/* Place */
+
+position: absolute;
+width: 131.58px;
+height: 34.66px;
+left: 119px;
+top: 751px;
+
+
+
+/* Rectangle 19 */
+
+position: absolute;
+width: 131.58px;
+height: 34.66px;
+left: 119px;
+top: 751px;
+
+background: #9A0000;
+
+
+/* Place Bid */
+
+position: absolute;
+width: 72.43px;
+height: 22.71px;
+left: 152px;
+top: 759px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #FFFFFF;
+
+
+
+/* Enter Bid */
+
+position: absolute;
+width: 247px;
+height: 35.49px;
+left: 118px;
+top: 686px;
+
+
+
+/* Enter Bid */
+
+position: absolute;
+width: 88px;
+height: 23px;
+left: 118px;
+top: 692px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+
+color: #000000;
+
+
+
+/* : */
+
+position: absolute;
+width: 6.04px;
+height: 27.49px;
+left: 211px;
+top: 694px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+
+color: #000000;
+
+
+
+/* Rectangle 20 */
+
+position: absolute;
+width: 142px;
+height: 29px;
+left: 223px;
+top: 686px;
+
+background: #969494;

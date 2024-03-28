@@ -1,7 +1,21 @@
+
+:root {
+    --step--5: clamp(0.4096rem, 0.4669rem + -0.0739cqi, 0.4521rem);
+    --step--4: clamp(0.512rem, 0.5532rem + -0.0531cqi, 0.5425rem);
+    --step--3: clamp(0.64rem, 0.6549rem + -0.0192cqi, 0.651rem);
+    --step--2: clamp(0.7813rem, 0.7747rem + 0.0326cqi, 0.8rem);
+    --step--1: clamp(0.9375rem, 0.9158rem + 0.1087cqi, 1rem);
+    --step-0: clamp(1.125rem, 1.0815rem + 0.2174cqi, 1.25rem);
+    --step-1: clamp(1.35rem, 1.2761rem + 0.3696cqi, 1.5625rem);
+    --step-2: clamp(1.62rem, 1.5041rem + 0.5793cqi, 1.9531rem);
+    --step-3: clamp(1.944rem, 1.771rem + 0.8651cqi, 2.4414rem);
+    --step-4: clamp(2.3328rem, 2.0827rem + 1.2504cqi, 3.0518rem);
+    --step-5: clamp(2.7994rem, 2.4462rem + 1.7658cqi, 3.8147rem);
+  }
+
 html, body{
     width: 100%;
     background: rgb(255, 255, 255);
-    min-height: 100vh;
 }
 
 body{
@@ -9,6 +23,7 @@ body{
     background-size: fill;
     background-repeat: no-repeat; 
     background-position: center;
+    height: 100vh;
 }
 * {
     margin: 0px;
@@ -23,11 +38,16 @@ body{
 }
 
 .side_navbar {
-    height: 100vh;
-    width: 15%;
+    height: 100%;
+    min-width: 10rem;
+    max-width: 15rem;
     background-color: rgb(154,0,0, 0.9);
     display: inline-block;
     text-align: center;
+}
+
+.side_navbar img{
+    width: 80%;
 }
 
 .side_navbar .line{
@@ -45,14 +65,16 @@ body{
     color: white;
     display: inline-block;
     width: 100%;
-    font-size: 20px;
+    font-size: var(--step-0);
     font-style: italic;
     font-weight: bold;
     margin: 5%;
 
-    margin-bottom: 10%;
+    margin-bottom: 3%;
     text-decoration: none;
 }
+
+
 
 .side_navbar #button:hover{
     text-decoration: underline;
@@ -70,8 +92,7 @@ body{
     position: fixed;
     width: 84%;
     display: inline-block;
-    height: 100%;
-    margin-left: 7px;
+    margin-left: 1%;
 }
 
 .top_navbar{
@@ -85,8 +106,8 @@ body{
 
 .top_navbar .search{
     margin-left: 5%;
-    border-radius: 5px;
-    padding: 5px;
+    border-radius: 5%;
+    padding: 1%;
     background: #D9D9D9;
     display: inline-block;
 }
@@ -105,35 +126,30 @@ body{
 }
 
 .search .img{
-    width: 20px;
+    max-width: 20px;
     vertical-align: middle;
+    min-width: 5px;
 }
 
 .admin{
-    display: inline-block;
+    display: flex;
     width: 6%;
     background: #9A0000;
     margin-right: 3%;
     border-radius: 5px;
+    align-items: center;
+    padding: 5px;
 }
 
 .admin .img{
-    display: inline-block;
+    display: flex;
     width: 20px;
-    vertical-align: middle;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 5%;
 }
 
 .admin #button{
-    width: 50%;
-    display: inline-block;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 5%;
-    color: white;
-    vertical-align: middle;
+    padding-left: .5rem;
+    display: flex;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
@@ -156,4 +172,59 @@ body{
 
 .dash .img{
     margin: 2%;
+}
+
+#sub-button{
+    color: white;
+    display: block;
+    text-decoration: none;
+    margin: 1rem;
+    font-size: var(--step--1);
+    margin-left: 2.5rem;
+}
+
+#sub-button:hover{
+    text-decoration: underline;
+}
+
+#dashboard{
+    display: block;
+    overflow: hidden;
+    height: 2rem;
+    transition: height 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+#dashboard:hover {
+    height: 12rem;
+}
+
+.side_navbar #button{
+    display: inline-flex;
+    width: 70%;
+    margin-left: 1%;
+}
+
+#sn-img{
+    display: inline-flex;
+    width: 15px;
+    margin-left: 1rem;
+    vertical-align: middle;
+}
+
+#bids{
+    display: block;
+    overflow: hidden;
+    height: 2rem;
+    transition: height 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+#bids:hover{
+    height: 7rem;
+}
+
+.userauth #button{
+    display: inline-block;
+    vertical-align: middle;
 }
