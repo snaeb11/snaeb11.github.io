@@ -1,69 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bids - BidBit</title>
 	<link rel="stylesheet" type="text/css" href="styles/bidsstyle.css">
 </head>
 <body>
-	<div class="Bids">
-		<div class="Pictures">
-			<img src="/photos/campus.jpg" class="bgimg" alt="USEP campus">
-				<nav class="bar">
-					<div class="bidbit"><a href="index.html"><img src="photos/bidbit.png" alt="bidbit logo"> </a></div>
-					<div class="navselect">
+
+	<nav>
+		<a href="index.html"><img src="photos/bidbit.png" alt="bidbit logo"></a>
 			        	<ul>
 			        		<a href="index.html"><li>Home</li></a>
 			        		<a href="bids.html"><li>Bids</li></a>
-			        		<li>Market</li>
+			        		<a href="market.html"><li>Market</li></a>
+                            <a href="login.html"><li>Login</li></a>
 			        	</ul>
-			        </div>
 
-			        <input class="navsearch" placeholder=" Search">
-			        	<button class="searchbutton"><img src="/photos/search.svg" alt="search icon"></button>
-			        </input>
-			        <button class="navbidder">Be a Bidder!</button>
-			        <button class="navmenu"><img src="/photos/Menu.png" alt="search icon"></button>
-				</nav>	
-		</div>
+			<div class="navsearch">
+				<form name="myForm" onsubmit="return checkForm(this)">
+                    <input class="searchfield" type="search" placeholder=" Search" name="search">
+                    <button class="searchbutton"><img src="photos/search.png" alt="search icon"></button>
+				</form>
+			</div>
+
+			<a href="biddersignup.html"><input type="button" class="navbidder" value="Be a Bidder!"></a>
+			<input type="image" class="navmenu" src="photos/user.svg" alt="user image">
+	</nav>
+
+
+	<div class="todaybid">Bids Today | March 11, 2024</div>
+
+	<div class="maintxt-container" >
+		
+	    <div class="bid-group">
+	        <div class="time">8:00 A.M</div>
+	        <div class="bidnow">Bidding Now</div>
+	        <div class="product">Coconut</div>
+	        
+	    </div>
+
+	    <div class="bid-group">
+	        <div class="time">10:00 A.M</div>
+	        <div class="product">Vermicast</div>
+	    </div>
+
+	    <div class="bid-group">
+	        <div class="time">12:00 P.M</div>
+	        <div class="product">Eggs</div>
+	    </div>
+
+	    <div class="bid-group">
+	        <div class="time">1:00 P.M</div>
+	        <div class="product">Chickens</div>
+	    </div>
+
+	    <div class="bid-group">
+	        <div class="time">3:00 P.M</div>
+	        <div class="product">Banana</div>
+	    </div>
+
+	    <div class="bid-group">
+	        <div class="time">5:00 P.M</div>
+	        <div class="product">Fruits</div>
+	    </div>
 	</div>
 
-	<div class="maintxt-container">
-	    <div class="todaybid">Bids Today | March 11, 2024</div>
-	    <div class="time1">8:00 A.M</div>
-	    <div class="bidnow">Bidding Now</div>
-	    <div class="product1">Coconut</div>
+	<div class="line6"></div>
 
-	    <div class="line1"></div>
-	    <div class="time2">10:00 A.M</div>
-	    <div class="product2">Vermicast</div>
 
-	    <div class="line2"></div>
-	    <div class="time3">12:00 P.M</div>
-	    <div class="product3">Eggs</div>
 
-	    <div class="line3"></div>
-	    <div class="time4">1:00 P.M</div>
-	    <div class="product4">Chickens</div>
-
-	    <div class="line4"></div>
-	    <div class="time5">3:00 P.M</div>
-	    <div class="product5">Banana</div>
-
-	    <div class="line5"></div>
-	    <div class="time6">5:00 P.M</div>
-	    <div class="product6">Fruits</div>
-
-	    <div class="line6"></div>
-	</div>
 
 	<div class="bidding-container">
 
 			<div class="specibid">
 				<div class="biddetails">Bidding Details</div>
 					<div class="bidprofile">
-						<div><img src="/photos/osas1.png" alt="OSAS logo"></div>
+						<div><img src="photos/osas1.png" alt="OSAS logo"></div>
 							<div class="proddetails">
 								<div class="bidprod">Vermicast Manure</div>
 								<div class="prodqty">Fertilizer | Quantity: 10 sacks</div>
@@ -115,7 +126,7 @@
 				<div>|</div>
 				<div class="date">09/03/2024</div>
 				<div>-</div>
-				<div class="time">0800h</div>
+				<div class="times">0800h</div>
 			</div>
 
 			<div class="bidder2">
@@ -124,7 +135,7 @@
 				<div>|</div>
 				<div class="date">09/03/2024</div>
 				<div>-</div>
-				<div class="time">0800h</div></div>
+				<div class="times">0800h</div></div>
 
 			<div class="bidder3">
 				<label>Bidder 3:</label>
@@ -132,7 +143,7 @@
 				<div>|</div>
 				<div class="date">09/03/2024</div>
 				<div>-</div>
-				<div class="time">0800h</div>
+				<div class="times">0800h</div>
 			</div>
 
 			<div class="bidder2">
@@ -141,7 +152,7 @@
 				<div>|</div>
 				<div class="date">09/03/2024</div>
 				<div>-</div>
-				<div class="time">0800h</div>
+				<div class="times">0800h</div>
 			</div>
 
 			<div class="bidder1">
@@ -150,40 +161,57 @@
 				<div>|</div>
 				<div class="date">09/03/2024</div>
 				<div>-</div>
-				<div class="time">0800h</div>
+				<div class="times">0800h</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="upcomingbids-container">
-		<div class="upcomingbids">Upcoming Bids</div>
+	<div class="upcomingbids">Upcoming Bids
 		<div class="line7"></div>
+	</div>
+		
 
-		<div class="date1">March 10, 2024</div>
-	    <div class="settime1">11:00 A.M</div>
+	<div class="upcomingbids-container">
+		<div class="bid-group">
+	        <div class="biddates">March 10, 2024</div>
+	        <div class="bidtime">11:00 A.M </div>
+	        
+	    </div>
 
-	    <div class="line8"></div>
-	    <div class="date2">March 11, 2024</div>
-	    <div class="settime2">12:00 P.M</div>
+	    <div class="bid-group">
+	        <div class="biddates">March 11, 2024</div>
+	        <div class="bidtime">12:00 P.M </div>
+	    </div>
 
-	    <div class="line9"></div>
-	    <div class="date3">March 12, 2024</div>
-	    <div class="settime3">08:00 A.M</div>
+	    <div class="bid-group">
+	        <div class="biddates">March 12, 2024</div>
+	        <div class="bidtime">8:00 A.M </div>
+	    </div>
 
-	    <div class="line10"></div>
-	    <div class="date4">March 13, 2024</div>
-	    <div class="settime4">01:00 P.M</div>
+	    <div class="bid-group">
+	        <div class="biddates">March 13, 2024</div>
+	        <div class="bidtime">1:00 P.M </div>
+	    </div>
 
-	    <div class="line11"></div>
-	    <div class="date5">March 14, 2024</div>
-	    <div class="settime5">02:00 P.M</div>
+	    <div class="bid-group">
+	        <div class="biddates">March 13, 2024</div>
+	        <div class="bidtime">3:00 P.M </div>
+	    </div>
 
-	    <div class="line12"></div>
-	    <div class="date6">March 13, 2024</div>
-	    <div class="settime6">03:00 P.M</div>
-
+	    <div class="bid-group">
+	        <div class="biddates">March 14, 2024</div>
+	        <div class="bidtime">2:00 P.M </div>
+	    </div>
 	</div>
 
+	<script type="text/javascript">
+		function checkForm(formObj) {
+              if (formObj.search.value.trim() == "") {
+                window.alert("Search field is empty, enter words you wanted to search.");
+                return false;
+              }
+        }
+	</script>
 
 </body>
 </html>

@@ -1,52 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/login.css">
-    
-    <script src="scripts/sweet.js"></script>
-    <script src="scripts/login.js"></script>
-    <title>BidBit</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+	<title>Landing - BidBit</title>
+	<link rel="stylesheet" type="text/css" href="styles/landingstyle.css">
 </head>
 <body>
-    <div class="container">
-        <div class="left">
-            <div class="img-div">
-                <img class="img" src="photos/main-img.png" alt="main-img">
-            </div>
-        </div>
-        <div class="right">
-            <div class="text-container">
-                <p class="text" id="main-text">Welcome to</p>
-                <img class="logo-img" src="photos/NavBarLogo.svg" alt="bidbit-logo">
-                <p class="text" id="sub-text">Set your bid and be on your way!</p>
-            </div>
+	<nav>
+		<a href="index.html"><img src="photos/bidbit.png" alt="bidbit logo"></a>
+			        	<ul>
+			        		<a href="index.html"><li>Home</li></a>
+			        		<a href="bids.html"><li>Bids</li></a>
+			        		<a href="market.html"><li>Market</li></a>
+                            <a href="login.html"><li>Login</li></a>
+			        	</ul>
 
-            <form action="" id="login" name="form">
-                <div class="login">
-                    <label for="email" id="text">Email</label><br>
-                    <input type="email" name="email" class="input" id="emailInput" required><br>
-    
-                    <label for="password" id="text">Password</label><br>
-                    <input type="password" name="password" class="input" id="passwordInput" required>
-    
-                    <br>
-                    <input type="button" id="button" value="Login" onclick="login()">
-                </div>
-            </form>
+			<div class="navsearch">
+				<form name="myForm" onsubmit="return checkForm(this)">
+                    <input class="searchfield" type="search" placeholder=" Search" name="search">
+                    <button class="searchbutton"><img src="photos/search.png" alt="search icon"></button>
+				</form>
+			</div>
 
-            <p class="sign-up">Don't have an account?
-                <a href="signup.html" class="button">Sign up Here</a>
-                &VerticalBar;
-                <a href="forgorpass.html" class="button">Forgot Password</a>
-            </p>
-        </div>
-    </div>
+			<a href="biddersignup.html"><input type="button" class="navbidder" value="Be a Bidder!"></a>
+			<input type="image" class="navmenu" src="photos/user.svg" alt="user image">
+	</nav>
+
+				<div class="maintxt">
+					<div class="info-container">
+						<div class="info-txt">
+						<div class="mainheadings">Where every penny talks</div>
+						
+						<div class="subheadings">Designed to streamline the purchasing process, BidBit serves as the interface between the university and third-partysuppliers, ensuring that every procurement is not just a transaction, but an opportunity for optimization and savings.</div>
+						
+						<div class="button-container">
+							<button class="bidnow">Bid Now!</button>
+						</div>
+						
+					
+						</div>
+						<div class="socials">
+								<img src="photos/Facebook.png" alt="facebook icon">
+								<img src="photos/Tiktok.png" alt="facebook icon">
+								<img src="photos/Instagram.png" alt="facebook icon">
+						</div>
+					</div>
+					
+						<div class="mainimg"><img src="photos/landingimg.png" alt="search icon"></div>
+				</div>
+				
+		
+	<div class="urgent">Urgent Biddings
+	<div class="line2"></div></div>
+			
+
+	<div class="biddings">
+			
+
+			<div class="biddercontainer">
+					<div class="box">
+						<div class="offices"><img src="photos/osas.png" alt="search icon"></div>
+						<div class="office-img">
+							<div class="offname">Office of Student Affairs</div>
+							<div class="bidspec">Office Supplies</div>
+							<div class="biddesc">Procurement of office supplies and other related equipment essential to the office’s function.</div>
+							<button class="officebid">Bid Now!</button>
+						</div>
+					</div>
+					<div class="box">
+						<div class="offices"><img src="photos/thelight.png" alt="search icon"></div>
+						<div class="office-img">
+							<div class="offname">The Light Publication</div>
+							<div class="bidspec">Camera</div>
+							<div class="biddesc">Procurement of office supplies and other related equipment essential to the office’s function.</div>
+							<button class="officebid">Bid Now!</button>
+						</div>
+					</div>
+					<div class="box">
+						<div class="offices"><img src="photos/ctet.png" alt="search icon"></div>
+						<div class="office-img">
+							<div class="offname">College of Teacher Education and Technology</div>
+							<div class="bidspec">Office Supplies</div>
+							<div class="biddesc">Procurement of office supplies and other related equipment essential to the office’s function.</div>
+							<button class="officebid">Bid Now!</button>
+						</div>
+					</div>
+			</div>			
+	</div>
+
+	<script type="text/javascript">
+		function checkForm(formObj) {
+              if (formObj.search.value.trim() == "") {
+                window.alert("Search field is empty, enter words you wanted to search.");
+                return false;
+              }
+        }
+	</script>
+
 </body>
 </html>

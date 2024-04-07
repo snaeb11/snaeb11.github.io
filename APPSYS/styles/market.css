@@ -165,7 +165,7 @@ body{
     min-height: 450px;
     max-height: 450px;
     box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.35);
-    transition: scale 0.35s ease, box-shadow 0.35s ease;
+    transition: box-shadow 0.35s ease;
 }
 
 .img_container img{
@@ -176,7 +176,6 @@ body{
 
 .item .img_container:hover{
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.35);
-    scale: 1.1;
 }
 
 .details {
@@ -226,8 +225,9 @@ body{
     color: white;
     font-size: 17px;
     margin: 3%;
+    margin-top: 8%;
     border-radius: 5px;
-    width: 80%;
+    width: 90%;
     transition: background 0.35s ease, box-shadow 0.35s ease;
 }
 

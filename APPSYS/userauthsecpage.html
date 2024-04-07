@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BidBit - Admin - User Authentication</title>
+    <link rel="stylesheet" type="text/css" href="styles/userauthsecstyle.css">
+
+    
+</head>
+<body>
+    <div class="side_navbar">
+        <a href="admin.html"><img src="photos/adminLogo.svg" alt="bidbit-logo"></a>
+        <hr class="line">
+        <div class="button-container">
+            <div id="dashboard">
+                <img src="photos/bars.svg" alt="" id="sn-img">
+                <a href="" id="button">Dashboard</a>
+                <a href="" id="sub-button">Monthly Sales</a>
+                <a href="" id="sub-button">Monthly Bid Rate</a>
+                <a href="" id="sub-button">Highest Bidder's</a>
+                <a href="" id="sub-button">Inventory</a>
+            </div>
+
+            <div id="bids">
+                <img src="photos/bids.svg" alt="" id="sn-img">
+                <a href="" id="button">Bids</a>
+                <a href="" id="sub-button">Manage Bids</a>
+                <a href="" id="sub-button">Market Place</a>
+            </div>
+
+            <div class="order">
+                <img src="photos/orderstat.svg" alt="" id="sn-img">
+                <a href="orderstatuspage.html" id="button">Order Status</a>
+            </div>
+
+            <div class="userauth">
+                <img src="photos/userauth.svg" alt="" id="sn-img">
+                <a href="userauthsecpage.html" id="button">User Authorization and Security</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="top_navbar">
+            <div class="search">
+                <form name="myForm" onsubmit="return checkForm(this)">
+                    <input class="input" type="search" placeholder="Search" name="search">
+                    <button class="img"><img src="photos/search.png" alt="search icon"></button>
+                </form>
+            </div>
+            <div class="admin">
+                <img class="img" src="photos/adminicon.svg" alt="user-icon">
+                <a href="#" id="button">Admin</a>
+            </div>
+            <div>
+                <img src="photos/burger.svg" alt="user-icon" id="burger-img">
+            </div>
+        </div>
+
+        <div class="dash">
+            <hr class="bordline">
+            <img class="img" src="photos/UserAuthSec.svg" alt="dashboard-text">
+            <hr class="bordline">
+        </div>
+
+        <div class="buttons">
+            <button class="sortbuttons">All</button>
+            <button class="sortbuttons">Existing Users</button>
+            <button class="sortbuttons">Sign-up Request</button>
+
+            <div class="alphabeticals">
+                <button class="alphabetsort">A - Z</button>
+                <button class="alphabetsort">Z - A</button>
+            </div>
+        </div>
+
+        <div class="container" id="blur">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Company/Department</th>
+                        <th>Email Address</th>
+                        <th>Phone Number</th>
+                        <th>Address</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td data-label="Name">Crocus.P</td>
+                        <td data-label="Company/Department">BEED Department</td>
+                        <td data-label="Email Address">Cro.Cusk@gmail.com</td>
+                        <td data-label="Phone Number">09X69-3X5-10X</td>
+                        <td data-label="Address">opxxx aynid sake xxx</td>
+                        <td>
+                            <a href="#" class="viewbtn" id="viewbtn">View Details</a>
+                            <a href="#" class="blockbtn" id="blockbtn">Blocked</a></td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="Name">Kiity Kat</td>
+                        <td data-label="Company/Department">BSIT Department</td>
+                        <td data-label="Email Address">Kitty.kat@gmail.com</td>
+                        <td data-label="Phone Number">09X33-7X1-42X</td>
+                        <td data-label="Address">e plis wir wiee con rock city</td>
+                        <td>
+                            <a href="#" class="acceptbtn" id="acceptbtn">Accept</a>
+                            <a href="#" class="declinebtn" id="declinebtn">Decline</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="popup1">
+            <div class="blockbtn-content">
+                <img class="img" src="photos/warning.svg">
+                <p>ARE YOU SURE YOU WANT TO BLOCK THIS USER</p><br>
+                <a href="" class="yesbtn">YES</a>
+                <a href="" class="cancelbtn">CANCEL</a>
+            </div> 
+        </div>
+
+        <div class="popup2">
+            <div class="viewbtn-content">
+                <a href="" class="viewbtn" id="return">VIEW DETAILS</a><br><br>
+                <table border="2">
+                <tr>
+                    <th>Name</th>
+                    <th>Company/Department</th>
+                    <th>Wants to Bid</th>
+                    <th>Qty</th>
+                    <th>Bid Amount</th>
+                    <th>Total Amount</th>
+                    <th>Date & Time</th>
+                </tr>
+
+                <tr>
+                    <td>Portgas D. Ace</td>
+                    <td>Flower Department</td>
+                    <td>1014 Fertilizer</td>
+                    <td>15</td>
+                    <td>Php300.00</td>
+                    <td>Php4,500.00</td>
+                    <td>04/10/2024    10:09 am</td>
+                </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="popup3">
+            <div class="blockbtn-content">
+                <img class="img" src="photos/warning.svg">
+                <p>ARE YOU SURE YOU WANT TO DECLINE THIS USER</p><br>
+                <a href="" class="yesbtn">YES</a>
+                <a href="" class="cancelbtn">CANCEL</a>
+            </div> 
+        </div>
+
+        <div class="popup4">
+            <div class="acceptbtn-content">
+                <div class="header"><img class="img" src="photos/verified.svg"></div>
+                <p>NEW USER HAS BEEN ADDED</p><br>
+                <a href="" class="okbtn">OK</a>
+            </div> 
+        </div>
+        
+    </div>
+
+    <script type="text/javascript">
+        document.getElementById('blockbtn').addEventListener('click', function(){
+            document.querySelector('.popup1').style.display = 'flex';
+        });
+
+        document.getElementById('viewbtn').addEventListener('click', function(){
+            document.querySelector('.popup2').style.display = 'flex';
+        });
+
+        document.getElementById('declinebtn').addEventListener('click', function(){
+            document.querySelector('.popup3').style.display = 'flex';
+        });
+
+        document.getElementById('acceptbtn').addEventListener('click', function(){
+            document.querySelector('.popup4').style.display = 'flex';
+        });
+
+        function checkForm(formObj) {
+              if (formObj.search.value.trim() == "") {
+                window.alert("Search field is empty, enter words you wanted to search.");
+                return false;
+              }
+        }
+    </script>
+</body>
+</html>
