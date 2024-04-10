@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BidBit - Admin</title>
+    <link rel="stylesheet" href="styles/managebids.css">
+    <script src="scripts/sweet.js"></script>
+    <script src="scripts/managebids.js"></script>
+</head>
+<body>
+    <div class="side_navbar">
+        <img src="photos/adminLogo.svg" alt="bidbit-logo">
+        <hr class="line">
+        <div class="button-container">
+            <div id="dashboard">
+                <img src="photos/bars.svg" alt="" id="sn-img">
+                <a href="dashboard.html" id="button">Dashboard</a>
+                <a href="dashboard.html#monthly-sales" class="smooth-scroll" id="sub-button">Monthly Sales</a>
+                <a href="dashboard.html#bid-rate" class="smooth-scroll" id="sub-button">Monthly Bid Rate</a>
+                <a href="dashboard.html#high-bidder" class="smooth-scroll" id="sub-button">Highest Bidder's</a>
+                <a href="dashboard.html#inventory" class="smooth-scroll" id="sub-button">Inventory</a>
+            </div>
+
+            <div id="bids">
+                <img src="photos/bids.svg" alt="" id="sn-img">
+                <a href="" id="button">Bids</a>
+                <a href="" id="sub-button">Manage Bids</a>
+                <a href="" id="sub-button">Market Place</a>
+            </div>
+
+            <div class="order">
+                <img src="photos/orderstat.svg" alt="" id="sn-img">
+                <a href="orderstatuspage.html" id="button">Order Status</a>
+            </div>
+
+            <div class="userauth">
+                <img src="photos/userauth.svg" alt="" id="sn-img">
+                <a href="userauthsecpage.html" id="button">User Authorization and Security</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="top_navbar">
+            <div class="search">
+                <img class="img" src="photos/search.svg" alt="search-button">
+                <input class="input" type="search" placeholder="Search">
+            </div>
+            <div class="admin">
+                <img class="img" src="photos/proffIcon.svg" alt="user-icon">
+                <a href="#" id="button">Admin</a>
+            </div>
+        </div>
+
+        <div class="dash-container">
+            <img class="img" src="photos/manangeBids.svg" alt="dashboard-text">
+
+            <div class="button-div">
+                <div class="left-button">
+                    <button class="button" id="add">&#65291;</button>
+                </div>
+                <button class="button" id="save" onclick="conf()">Save</button>
+            </div>
+            <hr id="line">
+            <div class="titles">
+                <p class="title" id="itemID">Item ID</p>
+                <p class="title" id="empty"></p>
+                <p class="title" id="commodity">Commodity</p>
+                <p class="title" id="variety">Variety</p>
+                <p class="title" id="price">Starting Price</p>
+                <p class="title" id="status">Active</p>
+            </div>
+            <hr id="line">
+
+            <div class="product" data-item-id="1011">
+                <div class="prodidpic">
+                    <p class="text" id="id">1011</p>
+                    <div class="pic-container">
+                        <img src="photos/placeholder.jpg" alt="banana">
+                    </div>
+                </div>
+
+                <div class="infodate-cont">
+                    <div class="prodinfo">
+                        <p class="text" id="prod-name">Bananas</p>
+                        <p class="text" id="prod-carr">Caradava</p>
+                        <p class="text" id="prod-price">Php 20.00</p>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                          </label>
+                    </div>
+
+                    <div class="date">
+                        <p class="text" id="start">Start:
+                            <span id="date">04/09/2024 08:05 AM</span>
+                            <img src="photos/calendar-days-svgrepo-com.svg" alt="">
+                        </p>
+                        <p class="text" id="end">End:
+                            <span id="date">04/14/2024 09:05 AM</span>
+                            <img src="photos/calendar-days-svgrepo-com.svg" alt="">
+                        </p>
+                    </div>
+                </div>
+                <button class="button" id="edit">Edit</button>
+            </div>
+
+            <hr id="line">
+
+            <div class="product" data-item-id="1012">
+                <div class="prodidpic">
+                    <p class="text" id="id">1012</p>
+                    <div class="pic-container">
+                        <img src="photos/egg.jpg" alt="banana">
+                    </div>
+                </div>
+
+                <div class="infodate-cont">
+                    <div class="prodinfo">
+                        <p class="text" id="prod-name">Eggs</p>
+                        <p class="text" id="prod-carr">Brown Egg</p>
+                        <p class="text" id="prod-price">Php 100.00</p>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                          </label>
+                    </div>
+
+                    <div class="date">
+                        <p class="text" id="start">Start:
+                            <span id="date">mm/dd/yyyy --:-- AM</span>
+                            <img src="photos/calendar-days-svgrepo-com.svg" alt="">
+                        </p>
+                        <p class="text" id="end">End:
+                            <span id="date">mm/dd/yyyy --:-- AM</span>
+                            <img src="photos/calendar-days-svgrepo-com.svg" alt="">
+                        </p>
+                    </div>
+                </div>
+                <button class="button" id="edit">Edit</button>
+            </div>
+
+            <hr id="line">
+
+            <div class="product" data-item-id="1013">
+                <div class="prodidpic">
+                    <p class="text" id="id">1013</p>
+                    <div class="pic-container">
+                        <img src="photos/coconut.jpg" alt="banana">
+                    </div>
+                </div>
+
+                <div class="infodate-cont">
+                    <div class="prodinfo">
+                        <p class="text" id="prod-name">Coconut</p>
+                        <p class="text" id="prod-carr"> </p>
+                        <p class="text" id="prod-price">Php 150.00</p>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                          </label>
+                    </div>
+
+                    <div class="date">
+                        <p class="text" id="start">Start:
+                            <span id="date">04/09/2024 08:05 AM</span>
+                            <img src="photos/calendar-days-svgrepo-com.svg" alt="">
+                        </p>
+                        <p class="text" id="end">End:
+                            <span id="date">04/14/2024 09:05 AM</span>
+                            <img src="photos/calendar-days-svgrepo-com.svg" alt="">
+                        </p>
+                    </div>
+                </div>
+                <button class="button" id="edit">Edit</button>
+            </div>
+
+            <hr id="line">
+
+            <div class="product" data-item-id="1014">
+                <div class="prodidpic">
+                    <p class="text" id="id">1014</p>
+                    <div class="pic-container">
+                        <img src="photos/verm.jpg" alt="banana">
+                    </div>
+                </div>
+
+                <div class="infodate-cont">
+                    <div class="prodinfo">
+                        <p class="text" id="prod-name">Fertilizer</p>
+                        <p class="text" id="prod-carr">Vermicast</p>
+                        <p class="text" id="prod-price">Php 200.00</p>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                          </label>
+                    </div>
+
+                    <div class="date">
+                        <p class="text" id="start">Start:
+                            <span id="date">mm/dd/yyyy --:-- AM</span>
+                            <img src="photos/calendar-days-svgrepo-com.svg" alt="">
+                        </p>
+                        <p class="text" id="end">End:
+                            <span id="date">mm/dd/yyyy --:-- AM</span>
+                            <img src="photos/calendar-days-svgrepo-com.svg" alt="">
+                        </p>
+                    </div>
+                </div>
+                <button class="button" id="edit">Edit</button>
+            </div>
+
+            <hr id="line">
+        </div>
+    </div>
+</body>
+</html>

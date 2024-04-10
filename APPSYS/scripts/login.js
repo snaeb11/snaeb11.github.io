@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     timer: 1000,
                     showConfirmButton: false
                 }).then(function() {
-                    window.location.href = 'admin.html';
+                    window.location.href = 'dashboard.html';
                 });
             } else if (email === 'user@gmail.com' && password === 'user123') {
                 Swal.fire({

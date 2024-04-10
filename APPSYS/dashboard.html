@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BidBit - Admin</title>
+    <link rel="stylesheet" href="styles/dashboard.css">
+</head>
+<body>
+    <div class="side_navbar">
+        <img src="photos/adminLogo.svg" alt="bidbit-logo">
+        <hr class="line">
+        <div class="button-container">
+            <div id="dashboard">
+                <img src="photos/bars.svg" alt="" id="sn-img">
+                <a href="" id="button">Dashboard</a>
+                <a href="#monthly-sales" class="smooth-scroll" id="sub-button">Monthly Sales</a>
+                <a href="#bid-rate" class="smooth-scroll" id="sub-button">Monthly Bid Rate</a>
+                <a href="#high-bidder" class="smooth-scroll" id="sub-button">Highest Bidder's</a>
+                <a href="#inventory" class="smooth-scroll" id="sub-button">Inventory</a>
+            </div>
+
+            <div id="bids">
+                <img src="photos/bids.svg" alt="" id="sn-img">
+                <a href="managebids.html" id="button">Bids</a>
+                <a href="managebids.html" id="sub-button">Manage Bids</a>
+                <a href="" id="sub-button">Market Place</a>
+            </div>
+
+            <div class="order">
+                <img src="photos/orderstat.svg" alt="" id="sn-img">
+                <a href="orderstatuspage.html" id="button">Order Status</a>
+            </div>
+
+            <div class="userauth">
+                <img src="photos/userauth.svg" alt="" id="sn-img">
+                <a href="userauthsecpage.html" id="button">User Authorization and Security</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="top_navbar">
+            <div class="search">
+                <img class="img" src="photos/search.svg" alt="search-button">
+                <input class="input" type="search" placeholder="Search">
+            </div>
+            <div class="admin">
+                <img class="img" src="photos/proffIcon.svg" alt="user-icon">
+                <a href="#" id="button">Admin</a>
+            </div>
+        </div>
+
+        <div class="dash-container">
+            <img class="title-img" src="photos/Dashboard.svg" alt="dashboard-text">
+
+            <section class="section" id="monthly-sales">
+                <div class="grahic">
+                    <img src="photos/graph.jpg" alt="" id="par">
+                    <img src="photos/Pie_Chart1 1s.svg" alt="">
+                </div>
+            </section>
+
+            <section class="section" id="bid-rate">
+                <div class="grahic">
+                    <img src="photos/mbr.svg" alt="">
+                </div>
+            </section>
+
+            <section class="section" id="high-bidder">
+                <div class="grahic">
+                    <img src="photos/hb.svg" alt="">
+                </div>
+            </section>
+
+            <section class="section" id="inventory">
+                <div class="card-container">
+                    <div class="card">
+                        <div class="product-image">
+                            <img src="photos/placeholder.jpg" alt="">
+                        </div>
+
+                        <div class="text-container">
+                            <p class="text" id="title">Bananas</p>
+                            <p class="text">Variety: <span id="prod-var">Cardava</span></p>
+                            <p class="text">Item Sold: <span id="sold">5</span></p>
+                            <p class="text">Available Stock: <span id="available">20 Hands</span></p>
+                            <p class="text">Price: <span id="price">Php 20</span></p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="product-image">
+                            <img src="photos/egg.jpg" alt="">
+                        </div>
+
+                        <div class="text-container">
+                            <p class="text" id="title">Eggs</p>
+                            <p class="text">Variety: <span id="prod-var">Brown</span></p>
+                            <p class="text">Item Sold: <span id="sold">10</span></p>
+                            <p class="text">Available Stock: <span id="available">None</span></p>
+                            <p class="text">Price: <span id="price">Php 100</span></p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="product-image">
+                            <img src="photos/vermicast.jpg" alt="">
+                        </div>
+
+                        <div class="text-container">
+                            <p class="text" id="title">Fertilizer</p>
+                            <p class="text">Variety: <span id="prod-var">Vermicast</span></p>
+                            <p class="text">Item Sold: <span id="sold">15</span></p>
+                            <p class="text">Available Stock: <span id="available">20 Sacks</span></p>
+                            <p class="text">Price: <span id="price">Php 200</span></p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="product-image">
+                            <img src="photos/coconut.jpg" alt="">
+                        </div>
+
+                        <div class="text-container">
+                            <p class="text" id="title">Coconut</p>
+                            <p class="text">Variety: <span id="prod-var">N/A</span></p>
+                            <p class="text">Item Sold: <span id="sold">1</span></p>
+                            <p class="text">Available Stock: <span id="available">15 Sacks</span></p>
+                            <p class="text">Price: <span id="price">Php 150</span></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

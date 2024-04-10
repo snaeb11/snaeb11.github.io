@@ -31,22 +31,17 @@ html, body{
     height: 100%;
     margin: 0;
     padding: 0;
-
+    display: flex;
 }
-
-.html::-webkit-scrollbar, .body::-webkit-scrollbar{
-    display: none;
-  }
 
 body{
     background-image: url(fullBG.png);
     background-size: fill;
-    background-repeat: no-repeat; 
     background-position: center;
     margin: 0;
     padding: 0;
-    overflow-y: hidden;
 }
+
 
 
 .side_navbar {
@@ -56,8 +51,17 @@ body{
     background-color: rgb(154,0,0, 0.9);
     display: inline-block;
     text-align: center;
-    overflow-y: scroll;
     height: 100vh;
+}
+
+.content{
+    width: 84%;
+    display: inline-block;
+    margin-left: 1%;
+    overflow-y: auto;
+    height: auto;
+    overflow: scroll;
+    scroll-behavior: smooth;
 }
 
 .side_navbar {
@@ -106,11 +110,20 @@ body{
     text-decoration: underline;
 }
 
-.content{
-    position: fixed;
-    width: 84%;
-    display: inline-block;
-    margin-left: 1%;
+.dash-container{
+    height: 100vh;
+}
+
+.title-img{
+    margin-top: 3rem;
+}
+
+.dash-container .section{
+    height: inherit;
+    margin: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .top_navbar{
@@ -185,7 +198,6 @@ body{
 
 .content .dash{
     margin-top: 3%;
-    height: inherit;
 }
 
 .dash .img{
@@ -245,4 +257,69 @@ body{
 .userauth #button{
     display: inline-block;
     vertical-align: middle;
+}
+
+.content{
+    height: auto;
+    overflow: scroll;
+}
+
+#monthly-sales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#monthly-sales #par{
+    width: 50%;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2rem;
+}
+
+.card{
+    display: flex;
+    transition: scale 0.30s ease;
+}
+
+.product-image{
+    width: 45%;
+    height: 350px;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.35);
+    transition: scale 0.1s ease;
+}
+
+.product-image:hover{
+    scale: 101%;
+}
+
+.product-image  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-container{
+    padding-top: 5%;
+    margin-left: 3%;
+}
+
+.text{
+    font-size: var(--step-0);
+}
+
+#title{
+    margin-left: 5%;
+    font-size: var(--step-3);
+    font-weight: 850;
+    font-style: italic;
+    color: #9A0000;
+    margin-bottom: 5%;
+}
+
+span{
+    color: #9A0000;
 }
