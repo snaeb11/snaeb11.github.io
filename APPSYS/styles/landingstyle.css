@@ -64,7 +64,15 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 1.5rem;
+    color: black;
+    font-size: var(--step--1);
+    background: none;
+    border: none;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 nav ul li:hover {

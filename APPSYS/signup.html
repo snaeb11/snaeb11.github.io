@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/signup.css">
     <title>BidBit</title>
+    <script src="scripts/sweet.js" ></script>
     <script src="scripts/signup.js" ></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,15 +27,15 @@
             </div>
 
             <div class="login">
-                <form action="" name="suform" onsubmit="passwordCheck()">
+                <form action="" name="suform">
                     <label for="email" id="text">Email</label><br>
-                    <input type="email" name="email" id="input" required><br>
+                    <input type="email" name="email" class="input" id="emailInput" required><br>
     
                     <label for="password" id="text">Password</label><br>
-                    <input type="password" name="password" id="input" required><br>
+                    <input type="password" name="password" class="input" id="pass1input" required><br>
     
                     <label for="password" id="text">Re-enter Password</label><br>
-                    <input type="password" name="repassword" id="input" required>
+                    <input type="password" name="repassword" class="input" id="pass2input" required>
     
                     <p id="text">Designation</p>
                     <div class="radio-container">
@@ -59,15 +60,18 @@
                     </div>
     
                     <br>
+
+                    
                 </form>
 
                 <div class="buttons-container">
-                    <input type="submit" name="submit" class="button" value="Create Account">
+                    <input type="submit" name="submit" class="button" id="sgbut" value="Create Account" onclick="signup()">
                     <a href="biddersignup.html"><button class="button" id="bebidder">Be a Bidder!</button></a>
                 </div>
 
+
                 <div class="bottom-text">
-                    <p class="sign-up">Already have an account? <a href="index.html" class="login-button">Login Here</a></p>
+                    <p class="sign-up">Already have an account? <a href="login.html" class="login-button">Login Here</a></p>
                 </div>
             </div>
         </div>
